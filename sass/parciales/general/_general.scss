@@ -8,6 +8,7 @@ $tamaño-fuente: 1rem;
 $gris: #6c757d;
 $gris-claro: #f4f4f6;
 $negro-claro: #171717;
+$azul: #4895ef;
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
     display: flex;
@@ -38,14 +39,15 @@ $negro-claro: #171717;
 }
 body {
     overflow-x: hidden;
+    background-color: $gris-claro
 }
-.contenedor-titulo {
+.contenedor-titulo__1 {
     @include flexbox-center;
     height: 120px;
     h1 {
+        @include flexbox-center
         color: $blanco;
         border: 1px solid black;
-        @include flexbox-center
         font-weight: bold;
         background-color: $gris;
         width: 80%;
@@ -53,4 +55,11 @@ body {
         border-radius: 50px;
         box-shadow: 0px 0px 5px 1px #000000;
     }
+}
+.contenedor-titulo__2 {
+    @include flexbox-center;
+    height: 80px;
+    background-color: $negro-claro;
+    color: white;
+    font-weight: bold;
 }

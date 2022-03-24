@@ -6,3 +6,18 @@
 .btn-footer__activo {
         border-bottom: 2px solid gold;
 }
+.contenedor-contactar__footer {
+    display: flex;
+    justify-content: center;
+    a {
+        @include flexbox-center;
+        height: 40px;
+        outline: 3px solid $azul;
+        background-color: $azul;
+        color: $blanco;
+        font-weight: bold;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

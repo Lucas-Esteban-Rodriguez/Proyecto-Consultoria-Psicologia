@@ -6,19 +6,19 @@ main {
         @include flexbox-evenly;
         height: 500px;
         img {
-            width: 500px;
+            width: 400px;
         }
         p {
-            width: 600px;
-            height: 300px;
+            width: 400px;
+            height: 400px;
         }
     }
 }
 .section-info {
     @include flexbox-evenly;
+    flex-wrap: wrap;
     width: 100%;
     height: 700px;
-    background-color: $gris-claro;
     .card {
         @include flexbox-start;
         width: 500px;
@@ -32,7 +32,6 @@ main {
             @include flexbox-center;
             width: 100%;
             height: 20%;
-            transform: rotatez(-5deg);
             p {
                 font-weight: bold;
                 @include flexbox-center;

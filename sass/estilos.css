@@ -10,9 +10,10 @@
 
 body {
   overflow-x: hidden;
+  background-color: #f4f4f6;
 }
 
-.contenedor-titulo {
+.contenedor-titulo__1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,9 +26,7 @@ body {
   height: 120px;
 }
 
-.contenedor-titulo h1 {
-  color: #ffff;
-  border: 1px solid black;
+.contenedor-titulo__1 h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,6 +36,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffff;
+  border: 1px solid black;
   font-weight: bold;
   background-color: #6c757d;
   width: 80%;
@@ -44,6 +45,22 @@ body {
   border-radius: 50px;
   -webkit-box-shadow: 0px 0px 5px 1px #000000;
           box-shadow: 0px 0px 5px 1px #000000;
+}
+
+.contenedor-titulo__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: #171717;
+  color: white;
+  font-weight: bold;
 }
 
 nav {
@@ -94,6 +111,36 @@ nav .nombre-pagina {
   border-bottom: 2px solid gold;
 }
 
+.contenedor-contactar__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor-contactar__footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  outline: 3px solid #4895ef;
+  background-color: #4895ef;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.contenedor-contactar__footer a:hover {
+  background-color: transparent;
+}
+
 .carrusel {
   margin-top: 120px;
 }
@@ -112,12 +159,12 @@ main .contenedor-info {
 }
 
 main .contenedor-info img {
-  width: 500px;
+  width: 400px;
 }
 
 main .contenedor-info p {
-  width: 600px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .section-info {
@@ -130,9 +177,10 @@ main .contenedor-info p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 700px;
-  background-color: #f4f4f6;
 }
 
 .section-info .card {
@@ -168,8 +216,6 @@ main .contenedor-info p {
           align-items: center;
   width: 100%;
   height: 20%;
-  -webkit-transform: rotatez(-5deg);
-          transform: rotatez(-5deg);
 }
 
 .section-info .card div p {
