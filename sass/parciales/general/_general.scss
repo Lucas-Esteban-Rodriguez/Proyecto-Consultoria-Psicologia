@@ -1,0 +1,56 @@
+// ---------------------------------------------Google Fonts--------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@300&display=swap');
+
+// ---------------------------------------------Variables-----------------------------------------------
+$blanco: #ffff;
+$tamaño-fuente: 1rem;
+$gris: #6c757d;
+$gris-claro: #f4f4f6;
+$negro-claro: #171717;
+// ---------------------------------------------Mixin´s-------------------------------------------------
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexbox-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin flexbox-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexbox-start {
+    display: flex;
+    justify-content: space-start;
+    align-items: center;
+}
+// ---------------------------------------------General-------------------------------------------------
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.contenedor-titulo {
+    @include flexbox-center;
+    height: 120px;
+    h1 {
+        color: $blanco;
+        border: 1px solid black;
+        @include flexbox-center
+        font-weight: bold;
+        background-color: $gris;
+        width: 80%;
+        height: 80px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 1px #000000;
+    }
+}

@@ -1,0 +1,52 @@
+.carrusel {
+    margin-top: 120px;
+}
+main {
+    .contenedor-info {
+        @include flexbox-evenly;
+        height: 500px;
+        img {
+            width: 500px;
+        }
+        p {
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+.section-info {
+    @include flexbox-evenly;
+    width: 100%;
+    height: 700px;
+    background-color: $gris-claro;
+    .card {
+        @include flexbox-start;
+        width: 500px;
+        height: 450px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 255, .2);
+        transition: all .2s;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+        div {
+            @include flexbox-center;
+            width: 100%;
+            height: 20%;
+            transform: rotatez(-5deg);
+            p {
+                font-weight: bold;
+                @include flexbox-center;
+                width: 70%;
+                border-bottom: 3px solid $gris;
+            }
+        }
+        ul {
+            font-size: $tamaño-fuente+0.2;
+            width: 100%;
+            height: 80%;
+            li::before {
+                content: ">>> ";
+            }
+        }
+    }
+}

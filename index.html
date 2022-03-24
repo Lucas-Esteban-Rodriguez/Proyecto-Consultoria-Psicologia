@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- ---------------------------------------Boostrap------------------------------------------------------ -->
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap-grid.min.css">
@@ -12,7 +12,145 @@
     <!-- -----------------------------------------------Estilos---------------------------------------------- -->
     <link rel="stylesheet" href="/Sass/estilos.css">
 </head>
-<body>
-    
+<body style="height: 10000px;">
+<!-- ---------------------------------------------------------Navbar--------------------------------------- -->
+<nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md fixed-top">
+    <div class="container-fluid d-flex justify-content-end">
+      <a class="navbar-brand logo-responsive" href="index.html"><img src="/img/Logo.png" alt="LOGO" width="50px"> Nombre Pág</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="index.html" class="nombre-pagina">Nombre pág</a>
+        <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-center">
+          <li class="nav-item me-3">
+            <a class="nav-link btn-nav__activo" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle btn-nav" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nosotros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Nosotras</a></li>
+              <li><a class="dropdown-item" href="#">La Empresa</a></li>
+            </ul>
+          </li>
+          <li class="logo">
+            <a href="index.html"><img src="/img/Logo.png" alt="LOGO" width="80px"></a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link btn-nav" href="#">Contacto</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link btn-nav">Información</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ----------------------------------------carrusel----------------------------------------------- -->
+  <section class="carrusel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/Logo.png" class="d-block w-100" height="500px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/Logo.png" class="d-block w-100" height="500px" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/Logo.png" class="d-block w-100" height="500px" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- ------------------------------------------------main-------------------------------------- -->
+  <main class="mt-5">
+    <div class="container-fluid mt-5 contenedor-titulo">
+      <h1 class="mb-0">Subtitulo</h1>
+    </div>
+    <div class="container-fluid contenedor-info mt-5">
+      <img src="/img/Logo.png" alt="">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias blanditiis atque eum assumenda ratione. Repudiandae ratione iste placeat sint cum, nihil deserunt dolor nulla? Quod magni modi aspernatur? Magni, explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem cumque sit, recusandae deleniti magnam, quibusdam accusantium iste autem eius, iusto dignissimos. Quam nulla eligendi magnam itaque hic ab excepturi. Temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique soluta reprehenderit iusto quod laboriosam sint corporis nihil sapiente laborum delectus! Totam, ea! Nobis soluta, unde impedit culpa quo facilis ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio alias, quae rem soluta, placeat nulla earum quod quam ut mollitia ad pariatur nesciunt similique debitis animi possimus voluptatum exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam eligendi qui optio iure ma</p>
+    </div>
+    <div class="container-fluid contenedor-info mt-5 mb-5">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias blanditiis atque eum assumenda ratione. Repudiandae ratione iste placeat sint cum, nihil deserunt dolor nulla? Quod magni modi aspernatur? Magni, explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem cumque sit, recusandae deleniti magnam, quibusdam accusantium iste autem eius, iusto dignissimos. Quam nulla eligendi magnam itaque hic ab excepturi. Temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique soluta reprehenderit iusto quod laboriosam sint corporis nihil sapiente laborum delectus! Totam, ea! Nobis soluta, unde impedit culpa quo facilis ipsum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio alias, quae rem soluta, placeat nulla earum quod quam ut mollitia ad pariatur nesciunt similique debitis animi possimus voluptatum exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam eligendi qui optio iure ma</p>
+      <img src="/img/Logo.png" alt="">
+    </div>
+  </main>
+  <!-- ------------------------------------------------section------------------------------------------------- -->
+  <section class="section-info">
+    <div class="card">
+      <div>
+        <p class="h1">Subtitulo</p>
+      </div>
+      <ul>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div>
+        <p class="h1">Subtitulo</p>
+      </div>
+      <ul>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+        <li class="mt-4">asdadasdasdasdasdadasdadasdasdasdasdasds</li>
+      </ul>
+    </div>
+  </section>
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2 offset-1">
+        <p class="h5 border-bottom d-flex justify-content-center">Secciones</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer__activo text-muted">Inicio</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Nosotras</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">La Empresa</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Contacto</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Información</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <p class="h5 border-bottom d-flex justify-content-center">Section</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-img col-5">
+        <img src="/img/Logo.png" width="300px" alt="">
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
+  <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

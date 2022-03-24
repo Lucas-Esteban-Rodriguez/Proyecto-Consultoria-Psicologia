@@ -1,0 +1,33 @@
+nav {
+    opacity: 95%;
+    background-color: $gris;
+    .btn-nav {
+        font-size: $tamaño-fuente;
+        color: $blanco!important;
+        &:hover {
+            border-bottom: 1px solid white;
+        }
+    }
+    .btn-nav__activo {
+        @extend .btn-nav;
+        border-bottom: 2px solid gold;
+        &:hover{
+            border-bottom: 2px solid gold;
+        }
+    }
+    .logo-responsive {
+        display: none;
+    }
+    .logo {
+        overflow-x: hidden;
+        border-radius: 50px;
+    }
+    .nombre-pagina {
+        width: 300px;
+        position: absolute;
+        color: $blanco;
+        text-decoration: none;
+        font-size: $tamaño-fuente*2;
+        font-family: 'baumans', cursive;
+    }
+}
