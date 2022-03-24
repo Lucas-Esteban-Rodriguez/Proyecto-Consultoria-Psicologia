@@ -9,7 +9,6 @@
 }
 
 body {
-  overflow-x: hidden;
   background-color: #f4f4f6;
 }
 
@@ -141,8 +140,8 @@ nav .nombre-pagina {
   background-color: transparent;
 }
 
-.carrusel {
-  margin-top: 120px;
+main {
+  height: 1250px;
 }
 
 main .contenedor-info {
@@ -155,16 +154,21 @@ main .contenedor-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 500px;
-}
-
-main .contenedor-info img {
-  width: 400px;
 }
 
 main .contenedor-info p {
-  width: 400px;
-  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
 }
 
 .section-info {
@@ -179,7 +183,6 @@ main .contenedor-info p {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
   height: 700px;
 }
 
@@ -194,12 +197,10 @@ main .contenedor-info p {
       -ms-flex-align: center;
           align-items: center;
   width: 500px;
-  height: 450px;
+  height: 500px;
   background: white;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 255, 0.2);
-  -webkit-transition: all .2s;
-  transition: all .2s;
   -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
           box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
@@ -219,7 +220,6 @@ main .contenedor-info p {
 }
 
 .section-info .card div p {
-  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,18 +229,13 @@ main .contenedor-info p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: bold;
   width: 70%;
   border-bottom: 3px solid #6c757d;
 }
 
 .section-info .card ul {
-  font-size: 1.2rem;
   width: 100%;
-  height: 80%;
-}
-
-.section-info .card ul li::before {
-  content: ">>> ";
 }
 
 @media screen and (max-width: 425px) {
@@ -252,6 +247,50 @@ main .contenedor-info p {
   }
   .nombre-pagina {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .contenedor-info {
+    height: 400px;
+  }
+  main .contenedor-info img {
+    width: 400px;
+  }
+  main .contenedor-info p {
+    width: 400px;
+    height: 400px;
+  }
+  .section-info .card {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .nombre-pagina {
+    font-size: 1.3rem;
+    width: 150px;
+  }
+  main {
+    height: 900px;
+  }
+  main .contenedor-info {
+    height: 300px;
+  }
+  main .contenedor-info img {
+    width: 300px;
+  }
+  main .contenedor-info p {
+    width: 300px;
+    height: 300px;
+  }
+  .section-info .card {
+    width: 300px;
+    height: 400px;
+  }
+  .footer-img {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

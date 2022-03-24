@@ -38,8 +38,7 @@ $azul: #4895ef;
     font-family: 'Roboto', sans-serif;
 }
 body {
-    overflow-x: hidden;
-    background-color: $gris-claro
+    background-color: $gris-claro;
 }
 .contenedor-titulo__1 {
     @include flexbox-center;
