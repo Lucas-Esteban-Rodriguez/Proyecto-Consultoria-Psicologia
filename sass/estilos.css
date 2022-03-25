@@ -89,7 +89,6 @@ nav .logo-responsive {
 }
 
 nav .logo {
-  overflow-x: hidden;
   border-radius: 50px;
 }
 
@@ -307,6 +306,15 @@ main .contenedor-info p {
   .contenedor-titulo__2 h2 {
     font-size: 1.8rem;
   }
+  nav .logo-responsive {
+    width: 200px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'baumans', cursive;
+  }
+  nav .logo-responsive img {
+    border-radius: 50px;
+  }
   main {
     height: 700px;
   }
@@ -344,6 +352,7 @@ main .contenedor-info p {
     font-size: 0.83333rem !important;
   }
   footer .btn-contactar__footer a {
+    padding: 0px;
     font-size: 0.66667rem;
     height: 25px;
   }
