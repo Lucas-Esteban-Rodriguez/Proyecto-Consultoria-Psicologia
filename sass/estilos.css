@@ -40,7 +40,7 @@ body {
   font-weight: bold;
   background-color: #6c757d;
   width: 80%;
-  height: 80px;
+  height: 60%;
   border-radius: 50px;
   -webkit-box-shadow: 0px 0px 5px 1px #000000;
           box-shadow: 0px 0px 5px 1px #000000;
@@ -110,7 +110,7 @@ nav .nombre-pagina {
   border-bottom: 2px solid gold;
 }
 
-.contenedor-contactar__footer {
+.btn-contactar__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +119,7 @@ nav .nombre-pagina {
           justify-content: center;
 }
 
-.contenedor-contactar__footer a {
+.btn-contactar__footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +136,7 @@ nav .nombre-pagina {
   font-weight: bold;
 }
 
-.contenedor-contactar__footer a:hover {
+.btn-contactar__footer a:hover {
   background-color: transparent;
 }
 
@@ -291,6 +291,64 @@ main .contenedor-info p {
   }
   .footer-img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contenedor-titulo__1 {
+    height: 80px;
+  }
+  .contenedor-titulo__1 h1 {
+    font-size: 1.8rem;
+  }
+  .contenedor-titulo__2 {
+    height: 50px;
+  }
+  .contenedor-titulo__2 h2 {
+    font-size: 1.8rem;
+  }
+  main {
+    height: 700px;
+  }
+  main .contenedor-info {
+    font-size: 0.66667rem;
+    height: 200px;
+  }
+  main .contenedor-info img {
+    width: 200px;
+  }
+  main .contenedor-info p {
+    width: 200px;
+    height: 200px;
+  }
+  .section-info {
+    height: 1100px;
+  }
+  .section-info .card {
+    width: 300px;
+  }
+  .section-info .card p {
+    font-size: 1.3rem;
+  }
+  .section-info .card li {
+    padding: 0px 10px;
+    font-size: 0.90909rem;
+  }
+  footer div {
+    padding: 0px !important;
+  }
+  footer div p {
+    font-size: 1rem !important;
+  }
+  footer div li {
+    font-size: 0.83333rem !important;
+  }
+  footer .btn-contactar__footer a {
+    font-size: 0.66667rem;
+    height: 25px;
+  }
+  footer .footer-img {
+    width: 120px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
