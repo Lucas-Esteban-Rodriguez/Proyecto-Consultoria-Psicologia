@@ -1,4 +1,6 @@
-
+.carrusel {
+    margin-top: 60px!important;
+}
 main {
     height: 1250px;
     .contenedor-info {
@@ -35,7 +37,11 @@ main {
             }
         }
         ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             width: 100%;
+            height: 100%;
         }
     }
 }

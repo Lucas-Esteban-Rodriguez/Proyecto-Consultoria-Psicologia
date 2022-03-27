@@ -42,9 +42,9 @@ body {
 }
 .contenedor-titulo__1 {
     @include flexbox-center;
-    height: 120px;
+    height: 100px;
     h1 {
-        @include flexbox-center
+        @include flexbox-center;
         color: $blanco;
         border: 1px solid black;
         font-weight: bold;
@@ -57,8 +57,10 @@ body {
 }
 .contenedor-titulo__2 {
     @include flexbox-center;
-    height: 80px;
+    height: 60px;
     background-color: $negro-claro;
-    color: white;
-    font-weight: bold;
+    color: $blanco;
+    h2 {
+        font-weight: bold;
+    }
 }

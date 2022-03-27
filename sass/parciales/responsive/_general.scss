@@ -107,10 +107,10 @@
         div {
             padding: 0px!important;
             p {
-                font-size: $tamaño-fuente!important;
+                font-size: $tamaño-fuente/1.2!important;
             }
             li {
-                font-size: $tamaño-fuente/1.2!important;
+                font-size: $tamaño-fuente/1.5!important;
             }
         }
         .btn-contactar__footer {
@@ -120,8 +120,11 @@
                 height: 25px;
             }
         }
-        .footer-img {
-            width: 120px;
+        .contenedor-imagen__footer {
+            @include flexbox-center;
+            .footer-img {
+                width: 120px;
+            }
         }
     }
 }

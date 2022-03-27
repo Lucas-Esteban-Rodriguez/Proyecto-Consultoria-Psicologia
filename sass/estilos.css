@@ -22,7 +22,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
+  height: 100px;
 }
 
 .contenedor-titulo__1 h1 {
@@ -56,10 +56,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
   background-color: #171717;
-  color: white;
+  color: #ffff;
+}
+
+.contenedor-titulo__2 h2 {
   font-weight: bold;
+}
+
+.z-index__1 {
+  z-index: 2;
 }
 
 nav {
@@ -137,6 +144,10 @@ nav .nombre-pagina {
 
 .btn-contactar__footer a:hover {
   background-color: transparent;
+}
+
+.carrusel {
+  margin-top: 60px !important;
 }
 
 main {
@@ -234,7 +245,18 @@ main .contenedor-info p {
 }
 
 .section-info .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 425px) {
@@ -346,17 +368,28 @@ main .contenedor-info p {
     padding: 0px !important;
   }
   footer div p {
-    font-size: 1rem !important;
+    font-size: 0.83333rem !important;
   }
   footer div li {
-    font-size: 0.83333rem !important;
+    font-size: 0.66667rem !important;
   }
   footer .btn-contactar__footer a {
     padding: 0px;
     font-size: 0.66667rem;
     height: 25px;
   }
-  footer .footer-img {
+  footer .contenedor-imagen__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .contenedor-imagen__footer .footer-img {
     width: 120px;
   }
 }
