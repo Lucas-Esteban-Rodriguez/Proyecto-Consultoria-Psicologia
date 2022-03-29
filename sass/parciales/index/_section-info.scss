@@ -2,8 +2,7 @@
     @include flexbox-evenly;
     flex-wrap: wrap;
     height: 700px;
-    .card {
-        @include flexbox-start;
+    .card__index {
         width: 500px;
         height: 500px;
         background: rgb(255, 255, 255);

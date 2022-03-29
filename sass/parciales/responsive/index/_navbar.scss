@@ -1,0 +1,30 @@
+@media screen and(max-width: 768px) {
+    nav {
+        .nombre-pagina {
+            font-size: $tamaño-fuente*1.3;
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    nav {
+        .logo-responsive {
+            width: 200px;
+            display: inline-block;
+            font-size: $tamaño-fuente*1.5;
+            font-family: 'baumans', cursive;
+            img {
+                border-radius: 50px;
+            }
+        }
+        .logo {
+            display: none;
+        }
+        .nombre-pagina {
+            display: none;
+        }
+    }
+}
+    

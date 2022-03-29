@@ -1,0 +1,32 @@
+@media screen and(max-width: 768px) {
+    .footer-img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        div {
+            padding: 0px!important;
+            p {
+                font-size: $tamaño-fuente/1.2!important;
+            }
+            li {
+                font-size: $tamaño-fuente/1.5!important;
+            }
+        }
+        .btn-contactar__footer {
+            a {
+                padding: 0px;
+                font-size: $tamaño-fuente/1.5;
+                height: 25px;
+            }
+        }
+        .contenedor-imagen__footer {
+            @include flexbox-center;
+            .footer-img {
+                width: 120px;
+            }
+        }
+    }    
+}

@@ -1,0 +1,47 @@
+@media screen and(max-width: 1024px) {   
+    main{
+        .contenedor-info{
+            height: 400px;
+            img{
+                width: 400px;
+            }
+            p{
+                width: 400px;
+                height: 400px;
+            }
+        }
+    } 
+}
+
+@media screen and(max-width: 768px) {
+    main {
+        height: 900px;
+        .contenedor-info{
+            height: 300px;
+            img {
+                width: 300px;
+            }
+            p{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        height: 700px;
+        .contenedor-info {
+            font-size: $tamaño-fuente/1.5;
+            height: 200px;
+            img{
+                width: 150px;
+            }
+            p{
+                width: 200px;
+                height: 150px;
+            }
+        }
+    }
+}

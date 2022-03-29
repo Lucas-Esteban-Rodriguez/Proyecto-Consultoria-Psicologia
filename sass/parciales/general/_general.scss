@@ -9,6 +9,8 @@ $gris: #6c757d;
 $gris-claro: #f4f4f6;
 $negro-claro: #171717;
 $azul: #4895ef;
+$verde__whatsapp: #00bb2d;
+$bordo: #941b0c;
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
     display: flex;
@@ -43,6 +45,7 @@ body {
 .contenedor-titulo__1 {
     @include flexbox-center;
     height: 100px;
+    width: 100%;
     h1 {
         @include flexbox-center;
         color: $blanco;

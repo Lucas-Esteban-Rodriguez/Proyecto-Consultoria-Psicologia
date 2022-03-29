@@ -22,7 +22,9 @@ nav {
         display: none;
     }
     .logo {
-        border-radius: 50px;
+        img {
+            border-radius: 100%;
+        }
     }
     .nombre-pagina {
         width: 300px;

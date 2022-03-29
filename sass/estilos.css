@@ -23,6 +23,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
+  width: 100%;
 }
 
 .contenedor-titulo__1 h1 {
@@ -95,8 +96,8 @@ nav .logo-responsive {
   display: none;
 }
 
-nav .logo {
-  border-radius: 50px;
+nav .logo img {
+  border-radius: 100%;
 }
 
 nav .nombre-pagina {
@@ -146,60 +147,307 @@ nav .nombre-pagina {
   background-color: transparent;
 }
 
-@media screen and (max-width: 425px) {
-  .logo {
-    display: none;
-  }
-  .logo-responsive {
-    display: inline-block;
-  }
-  .nombre-pagina {
-    display: none;
-  }
+.carrusel {
+  margin-top: 60px !important;
 }
 
-@media screen and (max-width: 1024px) {
-  main .contenedor-info {
-    height: 400px;
-  }
-  main .contenedor-info img {
-    width: 400px;
-  }
-  main .contenedor-info p {
-    width: 400px;
-    height: 400px;
-  }
-  .section-info .card {
-    width: 400px;
-    height: 500px;
-  }
+main {
+  height: 1250px;
 }
 
-@media screen and (max-width: 768px) {
-  nav .nombre-pagina {
-    font-size: 1.3rem;
-    width: 150px;
-  }
-  main {
-    height: 900px;
-  }
-  main .contenedor-info {
-    height: 300px;
-  }
-  main .contenedor-info img {
-    width: 300px;
-  }
-  main .contenedor-info p {
-    width: 300px;
-    height: 300px;
-  }
-  .section-info .card {
-    width: 300px;
-    height: 400px;
-  }
-  .footer-img {
-    width: 200px;
-  }
+main .contenedor-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contenedor-info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.section-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 700px;
+}
+
+.section-info .card__index {
+  width: 500px;
+  height: 500px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+          box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.section-info .card__index div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.section-info .card__index div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  width: 70%;
+  border-bottom: 3px solid #6c757d;
+}
+
+.section-info .card__index ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main__nosotras {
+  height: 1700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__nosotras .card__nosotras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: 500px;
+  background: #ececec;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.main__nosotras .card__nosotras img {
+  width: 30%;
+  height: 95%;
+}
+
+.main__nosotras .card__nosotras .perfil {
+  width: 50%;
+  height: 95%;
+}
+
+.main__nosotras .card__nosotras .perfil .nombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  height: 10%;
+}
+
+.main__nosotras .card__nosotras .perfil .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  padding: 0px 50px;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 24px;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 50px;
+  background-color: #00bb2d;
+  color: #ffff;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__whatsapp::before {
+  content: 'Enviar';
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__whatsapp:hover::before {
+  content: '';
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__whatsapp div {
+  width: 50%;
+  height: 100%;
+  background-image: url(/img/whatsapp.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 50px;
+  background-color: #941b0c;
+  color: #ffff;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__email::before {
+  content: 'Enviar';
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__email:hover::before {
+  content: '';
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .email-whatsapp .enviar__email div {
+  width: 50%;
+  height: 100%;
+  background-image: url(/img/gmail.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .contenedor-redes__nosotras {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main__nosotras .card__nosotras .contenedor__redes .contenedor-redes__nosotras .redes__nosotras {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background-color: red;
 }
 
 @media screen and (max-width: 425px) {
@@ -215,6 +463,16 @@ nav .nombre-pagina {
   .contenedor-titulo__2 h2 {
     font-size: 1.8rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  nav .nombre-pagina {
+    font-size: 1.3rem;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
   nav .logo-responsive {
     width: 200px;
     display: inline-block;
@@ -224,6 +482,44 @@ nav .nombre-pagina {
   nav .logo-responsive img {
     border-radius: 50px;
   }
+  nav .logo {
+    display: none;
+  }
+  nav .nombre-pagina {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .contenedor-info {
+    height: 400px;
+  }
+  main .contenedor-info img {
+    width: 400px;
+  }
+  main .contenedor-info p {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    height: 900px;
+  }
+  main .contenedor-info {
+    height: 300px;
+  }
+  main .contenedor-info img {
+    width: 300px;
+  }
+  main .contenedor-info p {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
   main {
     height: 700px;
   }
@@ -232,25 +528,51 @@ nav .nombre-pagina {
     height: 200px;
   }
   main .contenedor-info img {
-    width: 200px;
+    width: 150px;
   }
   main .contenedor-info p {
     width: 200px;
-    height: 200px;
+    height: 150px;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-info .card__index {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-info .card__index {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
   .section-info {
     height: 1100px;
   }
-  .section-info .card {
+  .section-info .card__index {
     width: 300px;
   }
-  .section-info .card p {
+  .section-info .card__index p {
     font-size: 1.3rem;
   }
-  .section-info .card li {
+  .section-info .card__index li {
     padding: 0px 10px;
     font-size: 0.90909rem;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
   footer div {
     padding: 0px !important;
   }
