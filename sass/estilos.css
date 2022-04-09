@@ -774,5 +774,8 @@ footer img {
     width: 100%;
     height: 75%;
   }
+  .main__contacto .card__contacto .formulario__contacto div label select {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
