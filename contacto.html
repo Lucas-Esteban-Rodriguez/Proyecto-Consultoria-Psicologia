@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ---------------------------------------Boostrap------------------------------------------------------ -->
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <!-- -------------------------------------------HTML------------------------------------------------------- -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- -----------------------------------------------Estilos---------------------------------------------- -->
+    <link rel="stylesheet" href="./sass/estilos.css">
+</head>
+<body>
+<!-- ---------------------------------------------------------Navbar--------------------------------------- -->
+  <nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md">
+    <div class="container-fluid d-flex justify-content-between">
+      <a class="navbar-brand logo-responsive" href="index.html"><img src="./img/Logo.png" alt="LOGO" width="50px"> Nombre Pág</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="index.html" class="nombre-pagina">Nombre pág</a>
+        <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-center">
+          <li class="nav-item me-lg-3 me-md-3 me-0">
+            <a class="nav-link btn-nav__activo" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown me-lg-3 me-md-3 me-0">
+            <a class="nav-link dropdown-toggle btn-nav" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nosotros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="nosotras.html">Nosotras</a></li>
+              <li><a class="dropdown-item" href="#">La Empresa</a></li>
+            </ul>
+          </li>
+          <li class="logo">
+            <a href="index.html"><img src="./img/Logo.png" alt="LOGO" width="80px"></a>
+          </li>
+          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+            <a class="nav-link btn-nav" href="#">Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+            <a class="nav-link btn-nav">Información</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- -----------------------------------------------Main-------------------------------------------------------------- -->
+    <main class="container-fluid main__contacto">
+        <div class="card__contacto card flex-row">
+            <div class="informacion__contacto">
+                <p class="h1">Informacion de contacto</p>
+                <p>Example123@Example123.com</p>
+                <p>(+53)11 23456789</p>
+            </div>
+            <form class="formulario__contacto">
+                <div class="row">
+                    <h1 class="col-12">Envia tu consulta</h1>
+                    <label for="Nombre" class="col-6 mt-lg-4 mt-4">
+                        Nombres: *<br>
+                        <input type="text" name="Nombre" required>
+                    </label>
+                    <label for="Apellido" class="col-6 mt-lg-4 mt-4">
+                        Apellido: *<br>
+                        <input type="text" name="Apellido" required>
+                    </label>
+                    <label for="Email" class="col-6 mt-lg-5 mt-4">
+                        Email: *<br>
+                        <input type="email" name="Email" required>
+                    </label>
+                    <label for="Celular" class="col-6 mt-lg-5 mt-4">
+                        Cel: <br>
+                        <input type="tel" name="Celular">
+                    </label>
+                    <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center">
+                        Hacia: *<br>
+                        <select name="Elegir">
+                            <option disabled selected>Elegir profesional</option>
+                            <option>Paola</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>No sé</option>
+                        </select>
+                    </label>
+                    <label for="Consulta" class="col-12 mt-lg-5 mt-4">
+                        Consulta: * <br>
+                        <textarea name="Consulta" cols="30" rows="10" required></textarea>
+                    </label>
+                    <div class="boton__formulario">
+                        <button type="submit" class="btn btn-primary mt-lg-5 mt-4">Enviar</button>
+                        <button type="reset" class="btn btn-danger mt-lg-5 mt-4">Reiniciar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+      <!-- -----------------------------------------------------Footer------------------------------------------ -->
+  <footer class="container-fluid border-top">
+    <div class="row">
+      <div class="col-3 col-md-2 col-lg-2 offset-lg-1 ms-lg-4 ms-md-4 mt-5">
+        <p class="h5 border-bottom d-flex justify-content-center">Secciones</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer__activo text-muted">Inicio</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Nosotras</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">La Empresa</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Contacto</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-flex justify-content-center btn-footer text-muted">Información</a></li>
+        </ul>
+      </div>
+      <div class="col-2 col-lg-2 col-md-2 mt-5">
+        <p class="h5 border-bottom d-flex justify-content-center">Section</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 d-flex justify-content-center text-muted">Instagram</li>
+          <li class="nav-item mb-2 d-flex justify-content-center text-muted">Email</li>
+          <li class="nav-item mb-2 d-flex justify-content-center text-muted">WhatsApp</li>
+          <li class="nav-item mb-2 d-flex justify-content-center text-muted">Info</li>
+          <li class="nav-item mb-2 d-flex justify-content-center text-muted">Info</li>
+        </ul>
+      </div>
+      <div class="col-2 col-lg-3 col-md-3 mt-3 btn-contactar__footer">
+        <a href="" class="btn">Contactar</a>
+      </div>
+      <div class="col-5 col-lg-4 col-md-4 mt-5 contenedor-imagen__footer d-flex justify-content-end">
+        <img class="footer-img" src="./img/Logo.png" width="300px" alt="">
+      </div>
+      <div class="py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
+  <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,12 +1,6 @@
-main {
-    height: 1250px;
-    .contenedor-info {
-        @include flexbox-evenly;
-        p {
-            @include flexbox-center;
-            width: 500px;
-            height: 500px;
-            overflow: hidden;
-        }
+.marketing {
+    text-align: center;
+    h2 {
+        font-weight: bold;
     }
 }

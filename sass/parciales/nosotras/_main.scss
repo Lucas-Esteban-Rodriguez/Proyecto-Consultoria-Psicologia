@@ -51,6 +51,7 @@
                     }
                     &:hover::before {
                         content: '';
+                        margin-left: 0;
                     }
                     div {
                         width: 50%;
@@ -73,6 +74,7 @@
                     }
                     &:hover::before {
                         content: '';
+                        margin-left: 0;
                     }
                     div {
                         width: 50%;

@@ -1,0 +1,65 @@
+.main__contacto {
+    @include flexbox-center;
+    height: 800px;
+    .card__contacto {
+        @include flexbox-center;
+        max-width: 1274px;
+        height: 600px;
+        border-radius: 20px;
+        box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+        .informacion__contacto {
+            @include flexbox-center;
+            flex-direction: column;
+            background-color: $azul;
+            width: 40%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            p {
+                text-align: center;
+                font-weight: bold;
+                color: $blanco;
+            }
+        }
+        .formulario__contacto {
+            padding: 20px 40px;
+            background-color: lightgray;
+            width: 60%;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .boton__formulario {
+                display: flex;
+                justify-content: end;
+                gap: 20px;
+            }
+            label {
+                font-size: $tamaño-fuente*1.2;
+                font-weight: bold;
+                input {
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid gray;
+                    &:focus {
+                        border-bottom: 1px solid $azul;
+                    }
+                }
+                textarea {
+                    @extend input;
+                }
+                select {
+                    @extend input;
+                    width: 50%;
+                }
+            }
+            h1 {
+                width: 100%;
+                height: 50px;
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
-@media screen and(max-width: 768px) {
-    .footer-img {
-        width: 200px;
+@media screen and (min-width: 1440px) {
+    footer {
+        .footer-img {
+            width: 250px;
+        }
     }
 }
+
 
 @media screen and (max-width: 425px) {
     footer {
@@ -24,9 +27,6 @@
         }
         .contenedor-imagen__footer {
             @include flexbox-center;
-            .footer-img {
-                width: 120px;
-            }
         }
     }    
 }

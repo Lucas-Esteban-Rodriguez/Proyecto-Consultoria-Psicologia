@@ -1,7 +1,27 @@
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1440px) {
     .main__nosotras {
         .card__nosotras {
-            width: 70%;
+            width: 900px;
+            height: 420px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .main__nosotras {
+        height: 1400px;
+        .card__nosotras {
+            width: 85%;
+            height: 360px;
+            .contenedor__redes {
+                .contenedor-redes__nosotras {
+                    margin-bottom: 20px;
+                    .redes__nosotras {
+                        width: 55px;
+                    }
+                }
+            }
         }
     }
 }
@@ -9,7 +29,8 @@
     .main__nosotras {
         height: 1400px;
         .card__nosotras {
-            width: 90%;
+            width: 95%;
+            height: 340px;
             .contenedor__redes {
                 .email-whatsapp {
                     margin-bottom: 0px;
@@ -31,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .main__nosotras {
         height: 2100px;
         .card__nosotras {

@@ -1,10 +1,9 @@
 .section-info {
     @include flexbox-evenly;
     flex-wrap: wrap;
-    height: 700px;
     .card__index {
-        width: 500px;
-        height: 500px;
+        width: 35%;
+        height: 400px;
         background: rgb(255, 255, 255);
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 255, .2);
