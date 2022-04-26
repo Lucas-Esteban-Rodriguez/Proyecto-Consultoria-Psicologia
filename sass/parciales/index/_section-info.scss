@@ -1,30 +1,60 @@
-.section-info {
-    @include flexbox-evenly;
-    flex-wrap: wrap;
-    .card__index {
-        width: 35%;
-        height: 400px;
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
-        border: 1px solid rgba(0, 0, 255, .2);
-        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-        div {
-            @include flexbox-center;
-            width: 100%;
-            height: 20%;
-            p {
-                @include flexbox-center;
-                font-weight: bold;
-                width: 70%;
-                border-bottom: 3px solid $gris;
-            }
-        }
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
+.card {
+    width: 190px;
+    height: 254px;
+    position: relative;
+    outline: .5em solid #f5f5f5;
+    background-image: url(/img/Logo.png);
+   }
+   .card-info {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 1.5em;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+   }
+   
+   .card-bio {
+    padding: 1.8em;
+    text-align: center;
+    transform: translate(100%,40%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    pointer-events: none;
+    p {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5em;
     }
-}
+   }
+
+   .title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 2px;
+        margin: 0 auto 4%;
+        background-color: white;
+       }
+   }
+   .subtitle {
+    font-weight: 400;
+    line-height: 1em;
+    color: white;
+   }
+   
+   .card:hover .card-info {
+    transform: translateX(-100%);
+   }
+   
+   .card:hover .card-bio {
+    transform: translate(0,40%);
+    opacity: 1;
+   }
+   
+   
+   

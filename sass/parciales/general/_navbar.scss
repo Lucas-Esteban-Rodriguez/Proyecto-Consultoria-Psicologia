@@ -3,27 +3,55 @@
 }
 nav {
     opacity: 95%;
-    background-color: $gris;
+    padding: 0!important;
     .btn-nav {
+        position: relative;
         font-size: $tamaño-fuente;
-        color: $blanco!important;
+        color: $negro-claro!important;
+        font-weight: bold;
+        z-index: 1;
+        transition: 0.8s;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            background-color: $verde-wake;
+            height: 0;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            transition: 0.8s;
+        }
         &:hover {
-            border-bottom: 1px solid white;
+            color: $blanco!important;
+        }
+        &:hover::before {
+            height: 100%;
         }
     }
     .btn-nav__activo {
-        @extend .btn-nav;
-        border-bottom: 2px solid gold;
-        &:hover{
-            border-bottom: 2px solid gold;
+        color: $negro-claro!important;
+        position: relative;
+        font-weight: bold;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: gold;
+            right: 0;
+            bottom: 0;
         }
     }
     .logo-responsive {
         display: none;
     }
     .logo {
+        width: 227.5px;
+        height: 143.5px;
         img {
-            border-radius: 100%;
+            width: 100%;
+            height: 100%;
         }
     }
     .nombre-pagina {

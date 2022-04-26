@@ -50,6 +50,7 @@
                 }
                 textarea {
                     @extend input;
+                    resize: none;
                 }
                 select {
                     @extend input;

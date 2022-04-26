@@ -10,6 +10,7 @@ $gris-claro: #f4f4f6;
 $negro-claro: #171717;
 $azul: #4895ef;
 $verde__whatsapp: #00bb2d;
+$verde-wake: #0B653Fff;
 $bordo: #941b0c;
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
@@ -39,9 +40,7 @@ $bordo: #941b0c;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body {
-    background-color: $gris-claro;
-}
+
 .contenedor-titulo__1 {
     @include flexbox-center;
     height: 100px;
@@ -61,7 +60,7 @@ body {
 .contenedor-titulo__2 {
     @include flexbox-center;
     height: 60px;
-    background-color: $negro-claro;
+    background-color: $verde-wake;
     color: $blanco;
     h2 {
         font-weight: bold;
