@@ -43,55 +43,107 @@
   </nav>
 <!-- -----------------------------------------------Main-------------------------------------------------------------- -->
   <main class="container-fluid main__contacto">
+    <div class="div-contacto">
       <div class="card__contacto" id="card__contacto">
-          <div class="informacion__contacto">
-              <p class="h1">Informacion de contacto</p>
-              <p>Example123@Example123.com</p>
-              <p>(+53)11 23456789</p>
+        <div class="informacion__contacto">
+          <p class="h1">Informacion de contacto</p>
+          <p>Example123@Example123.com</p>
+          <p>(+53)11 23456789</p>
+        </div>
+        <form class="formulario__contacto">
+          <div class="row">
+            <h1 class="col-12">Envia tu consulta</h1>
+            <label for="Nombre" class="col-6 mt-lg-4 mt-4 label-contacto">
+              Nombres: *
+              <input class="input-contacto" type="text" name="Nombre" required>
+            </label>
+            <label for="Apellido" class="col-6 mt-lg-4 mt-4 label-contacto">
+              Apellido: *
+              <input class="input-contacto" type="text" name="Apellido" required>
+            </label>
+            <label for="Email" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
+              Email: *
+              <input class="input-contacto" type="email" name="Email" required>
+            </label>
+            <label for="Celular" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
+              Cel:
+              <input class="input-contacto" type="tel" name="Celular">
+            </label>
+            <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center label-contacto">
+              Hacia: *
+              <select name="Elegir">
+                <option disabled selected>Elegir profesional</option>
+                <option>Paola</option>
+                <option>2</option>
+                <option>3</option>
+                <option>No sé</option>
+              </select>
+            </label>
+            <label for="Consulta" class="col-12 mt-lg-5 mt-4 label-contacto">
+              Consulta: *
+              <textarea name="Consulta" cols="30" rows="10" required></textarea>
+            </label>
+            <label for="radio" class="mt-2">
+              <input type="checkbox" class="me-2" id="inputRadio"><p class="d-inline p-radio">Quiere reservar un turno y pagar.</p>
+            </label>
+            <div class="botones__formulario" id="a">
+              <button type="submit" onclick="preventDefault(e)" class="btn btn-primary btn-enviar">Enviar</button>
+              <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>
+            </div>
           </div>
-          <form class="formulario__contacto">
-              <div class="row">
-                  <h1 class="col-12">Envia tu consulta</h1>
-                  <label for="Nombre" class="col-6 mt-lg-4 mt-4">
-                      Nombres: *
-                      <input class="input__contacto" type="text" name="Nombre" required>
-                  </label>
-                  <label for="Apellido" class="col-6 mt-lg-4 mt-4">
-                      Apellido: *
-                      <input class="input__contacto" type="text" name="Apellido" required>
-                  </label>
-                  <label for="Email" class="col-lg-6 col-sm-12 mt-lg-5 mt-4">
-                      Email: *
-                      <input class="input__contacto" type="email" name="Email" required>
-                  </label>
-                  <label for="Celular" class="col-lg-6 col-sm-12 mt-lg-5 mt-4">
-                      Cel:
-                      <input class="input__contacto" type="tel" name="Celular">
-                  </label>
-                  <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center">
-                      Hacia: *
-                      <select name="Elegir">
-                          <option disabled selected>Elegir profesional</option>
-                          <option>Paola</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>No sé</option>
-                      </select>
-                  </label>
-                  <label for="Consulta" class="col-12 mt-lg-5 mt-4">
-                      Consulta: *
-                      <textarea name="Consulta" cols="30" rows="10" required></textarea>
-                  </label>
-                  <label for="radio" class="mt-2">
-                    <input type="checkbox" class="input-radio__contacto" id="inputRadio">Quiere reservar un turno y pagar.
-                  </label>
-                  <div class="botones__formulario" id="a">
-                    <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
-                    <button type="reset" class="btn btn-danger">Reiniciar</button>
-                  </div>
-              </div>
-          </form>
+        </form>
       </div>
+
+      <div class="card__contacto" id="card__contacto">
+        <div class="informacion__contacto">
+          <p class="h1">Informacion de contacto</p>
+          <p>Example123@Example123.com</p>
+          <p>(+53)11 23456789</p>
+        </div>
+        <form class="formulario__contacto">
+          <div class="row">
+            <h1 class="col-12">Envia tu consulta</h1>
+            <label for="Nombre" class="col-6 mt-lg-4 mt-4 label-contacto">
+              Nombres: *
+              <input class="input-contacto" type="text" name="Nombre" required>
+            </label>
+            <label for="Apellido" class="col-6 mt-lg-4 mt-4 label-contacto">
+              Apellido: *
+              <input class="input-contacto" type="text" name="Apellido" required>
+            </label>
+            <label for="Email" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
+              Email: *
+              <input class="input-contacto" type="email" name="Email" required>
+            </label>
+            <label for="Celular" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
+              Cel:
+              <input class="input-contacto" type="tel" name="Celular">
+            </label>
+            <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center label-contacto">
+              Hacia: *
+              <select name="Elegir">
+                <option disabled selected>Elegir profesional</option>
+                <option>Paola</option>
+                <option>2</option>
+                <option>3</option>
+                <option>No sé</option>
+              </select>
+            </label>
+            <label for="Consulta" class="col-12 mt-lg-5 mt-4 label-contacto">
+              Consulta: *
+              <textarea name="Consulta" cols="30" rows="10" required></textarea>
+            </label>
+            <label for="radio" class="mt-2">
+              <input type="checkbox" class="me-2" id="inputRadio"><p class="d-inline p-radio">Quiere reservar un turno y pagar.</p>
+            </label>
+            <div class="botones__formulario" id="a">
+              <button type="submit" onclick="preventDefault(e)" class="btn btn-primary btn-enviar">Enviar</button>
+              <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </main>
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
   <div class="container">
