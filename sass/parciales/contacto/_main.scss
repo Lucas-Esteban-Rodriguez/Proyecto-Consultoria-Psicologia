@@ -4,7 +4,7 @@
     .card__contacto {
         @include flexbox-center;
         max-width: 1274px;
-        height: 600px;
+        height: 580px;
         border-radius: 20px;
         box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #ffffff;
@@ -29,7 +29,7 @@
             height: 100%;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            .boton__formulario {
+            .botones__formulario {
                 display: flex;
                 justify-content: end;
                 gap: 20px;
@@ -37,7 +37,7 @@
             label {
                 font-size: $tamaño-fuente*1.2;
                 font-weight: bold;
-                input {
+                .input__contacto {
                     width: 100%;
                     height: 30px;
                     border: none;
@@ -49,11 +49,11 @@
                     }
                 }
                 textarea {
-                    @extend input;
+                    @extend .input__contacto;
                     resize: none;
                 }
                 select {
-                    @extend input;
+                    @extend .input__contacto;
                     width: 50%;
                 }
             }
@@ -63,4 +63,7 @@
             }
         }
     }
+}
+.input-radio__contacto:checked .btn-siguiente {
+    display: none;
 }
