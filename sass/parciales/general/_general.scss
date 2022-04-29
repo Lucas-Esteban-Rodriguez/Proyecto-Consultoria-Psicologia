@@ -12,6 +12,14 @@ $azul: #4895ef;
 $verde__whatsapp: #00bb2d;
 $verde-wake: #0B653Fff;
 $bordo: #941b0c;
+// Animaciones
+
+@keyframes logo {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
     display: flex;

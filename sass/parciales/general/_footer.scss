@@ -39,13 +39,6 @@
 .logo-footer {
     transition: .4s;
     &:hover {
-        animation-name: logo;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-    }
-}
-@keyframes logo {
-    to {
-        transform: rotate(360deg);
+        animation: logo 1s;
     }
 }

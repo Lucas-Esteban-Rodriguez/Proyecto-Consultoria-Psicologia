@@ -4,6 +4,22 @@
 nav {
     opacity: 95%;
     padding: 0!important;
+    .contenedor-logo {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        .logo {
+            width: 50%;
+        }
+        .WakeMind {
+            width: 100%;
+        }
+        &:hover .logo {
+            animation: logo 1s;
+        }
+    }
     .btn-nav {
         position: relative;
         font-size: $tamaño-fuente;
@@ -42,24 +58,5 @@ nav {
             right: 0;
             bottom: 0;
         }
-    }
-    .logo-responsive {
-        display: none;
-    }
-    .logo {
-        width: 227.5px;
-        height: 143.5px;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .nombre-pagina {
-        width: 300px;
-        position: absolute;
-        color: $blanco;
-        text-decoration: none;
-        font-size: $tamaño-fuente*2;
-        font-family: 'baumans', cursive;
     }
 }

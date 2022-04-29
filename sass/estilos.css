@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Baumans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@300&display=swap");
+@-webkit-keyframes logo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes logo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -78,6 +91,34 @@ nav {
   padding: 0 !important;
 }
 
+nav .contenedor-logo {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+nav .contenedor-logo .logo {
+  width: 50%;
+}
+
+nav .contenedor-logo .WakeMind {
+  width: 100%;
+}
+
+nav .contenedor-logo:hover .logo {
+  -webkit-animation: logo 1s;
+          animation: logo 1s;
+}
+
 nav .btn-nav {
   position: relative;
   font-size: 1rem;
@@ -123,29 +164,6 @@ nav .btn-nav__activo::before {
   background-color: #0B653Fff;
   right: 0;
   bottom: 0;
-}
-
-nav .logo-responsive {
-  display: none;
-}
-
-nav .logo {
-  width: 227.5px;
-  height: 143.5px;
-}
-
-nav .logo img {
-  width: 100%;
-  height: 100%;
-}
-
-nav .nombre-pagina {
-  width: 300px;
-  position: absolute;
-  color: #ffff;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: 'baumans', cursive;
 }
 
 .btn-footer, .btn-footer__activo {
@@ -194,38 +212,43 @@ nav .nombre-pagina {
 }
 
 .logo-footer:hover {
-  -webkit-animation-name: logo;
-          animation-name: logo;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@-webkit-keyframes logo {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes logo {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  -webkit-animation: logo 1s;
+          animation: logo 1s;
 }
 
 .img-carrusel {
   height: 500px;
 }
 
-.marketing {
+.main-index {
   text-align: center;
+  position: relative;
+  width: 100%;
+  height: 700px;
 }
 
-.marketing h2 {
+.main-index img {
+  opacity: 70%;
+}
+
+.main-index .contenedor-info-index {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main-index .contenedor-info-index .info-index .h2 {
   font-weight: bold;
+}
+
+.main-index .contenedor-info-index .info-index-valor {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .card-index {
