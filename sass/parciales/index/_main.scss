@@ -2,9 +2,11 @@
     text-align: center;
     position: relative;
     height: 700px;
-    img {
-        opacity: 70%;
-        width: 100%;
+    .bg-wakemind {
+        position: absolute;
+        background-image: url(/img/WakeMind.png);
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .contenedor-info-index {
         position: absolute;

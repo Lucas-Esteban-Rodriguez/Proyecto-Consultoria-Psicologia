@@ -82,17 +82,13 @@
   background-repeat: no-repeat;
 }
 
-.z-index__1 {
-  z-index: 2;
-}
-
 nav {
   opacity: 95%;
   padding: 0 !important;
 }
 
 nav .contenedor-logo {
-  width: 200px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +103,7 @@ nav .contenedor-logo {
 }
 
 nav .contenedor-logo .logo {
-  width: 40%;
+  width: 30%;
 }
 
 nav .contenedor-logo .WakeMind {
@@ -226,9 +222,11 @@ nav .btn-nav__activo::before {
   height: 700px;
 }
 
-.main-index img {
-  opacity: 70%;
-  width: 100%;
+.main-index .bg-wakemind {
+  position: absolute;
+  background-image: url(/img/WakeMind.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-index .contenedor-info-index {
@@ -736,27 +734,26 @@ nav .btn-nav__activo::before {
 }
 
 @media screen and (max-width: 768px) {
-  nav .nombre-pagina {
-    font-size: 1.3rem;
-    width: 150px;
+  nav .contenedor-logo {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 426px) {
-  nav .logo-responsive {
-    width: 200px;
-    display: inline-block;
-    font-size: 1.5rem;
-    font-family: 'baumans', cursive;
+  nav .contenedor-logo {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  nav .logo-responsive img {
-    border-radius: 50px;
+  nav .contenedor-logo .logo {
+    width: 50px;
   }
-  nav .logo {
-    display: none;
-  }
-  nav .nombre-pagina {
-    display: none;
+  nav .contenedor-logo .WakeMind {
+    width: 100px;
   }
 }
 

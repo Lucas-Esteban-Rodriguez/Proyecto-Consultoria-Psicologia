@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    nav {
+        .contenedor-logo {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    nav {
+        .contenedor-logo {
+            width: max-content;
+            flex-direction: row;
+            .logo {
+                width: 50px;
+            }
+            .WakeMind {
+                width: 100px;
+            }
+        }
+    }
+}
