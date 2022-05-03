@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    .img-carrusel {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .img-carrusel {
+        height: 250px;
+    }
+    .img-carrusel1 {
+        width: 100%;
+    }
+}

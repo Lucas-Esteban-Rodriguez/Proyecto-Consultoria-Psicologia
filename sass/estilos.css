@@ -213,7 +213,15 @@ nav .btn-nav__activo::before {
 }
 
 .img-carrusel {
-  height: 500px;
+  height: 550px;
+}
+
+.img-carrusel1 {
+  width: 85%;
+}
+
+.img-carrusel2 {
+  width: 70%;
 }
 
 .main-index {
@@ -232,6 +240,7 @@ nav .btn-nav__activo::before {
 .main-index .contenedor-info-index {
   position: absolute;
   top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +258,13 @@ nav .btn-nav__activo::before {
       align-self: end;
 }
 
-.card-index {
+.section-info {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.section-info .card-index {
   width: 190px;
   height: 254px;
   position: relative;
@@ -261,16 +276,16 @@ nav .btn-nav__activo::before {
   transition: 1s;
 }
 
-.card-index:hover {
+.section-info .card-index:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.card-index:hover .card-info {
+.section-info .card-index:hover .card-info {
   opacity: 0;
 }
 
-.card-index .card-info__hover {
+.section-info .card-index .card-info__hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,12 +311,12 @@ nav .btn-nav__activo::before {
   border-radius: 5px;
 }
 
-.card-index .card-info__hover p {
+.section-info .card-index .card-info__hover p {
   margin: auto;
   padding: 0 20px;
 }
 
-.card-index .card-info__hover a {
+.section-info .card-index .card-info__hover a {
   text-decoration: none;
   color: #4895ef;
   margin-bottom: 10px;
@@ -310,11 +325,11 @@ nav .btn-nav__activo::before {
   font-weight: bold;
 }
 
-.card-index:hover .card-info__hover {
+.section-info .card-index:hover .card-info__hover {
   opacity: 100%;
 }
 
-.card-info {
+.section-info .card-info {
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -326,13 +341,13 @@ nav .btn-nav__activo::before {
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 0.8s, -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.card-info .title {
+.section-info .card-info .title {
   font-size: 1.3em;
   font-weight: bold;
   color: #ffff;
 }
 
-.card-info .title::after {
+.section-info .card-info .title::after {
   content: "";
   display: block;
   width: 50%;
@@ -341,7 +356,7 @@ nav .btn-nav__activo::before {
   background-color: #ffff;
 }
 
-.card-info .subtitle {
+.section-info .card-info .subtitle {
   font-weight: 400;
   line-height: 1em;
   color: #ffff;
@@ -757,67 +772,36 @@ nav .btn-nav__activo::before {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .section-info .card__index {
-    width: 400px;
-    height: 500px;
+@media screen and (max-width: 768px) {
+  .btns-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-info .card__index {
-    width: 300px;
-    height: 400px;
+  .img-carrusel {
+    height: 450px;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .section-info {
-    height: 1100px;
+  .img-carrusel {
+    height: 250px;
   }
-  .section-info .card__index {
-    width: 300px;
-  }
-  .section-info .card__index p {
-    font-size: 1.3rem;
-  }
-  .section-info .card__index li {
-    padding: 0px 10px;
-    font-size: 0.90909rem;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  footer .footer-img {
-    width: 250px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  footer div {
-    padding: 0px !important;
-  }
-  footer div p {
-    font-size: 0.83333rem !important;
-  }
-  footer div li {
-    font-size: 0.66667rem !important;
-  }
-  footer .btn-contactar__footer a {
-    padding: 0px;
-    font-size: 0.66667rem;
-    height: 25px;
-  }
-  footer .contenedor-imagen__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .img-carrusel1 {
+    width: 100%;
   }
 }
 
