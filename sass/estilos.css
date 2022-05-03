@@ -223,12 +223,12 @@ nav .btn-nav__activo::before {
 .main-index {
   text-align: center;
   position: relative;
-  width: 100%;
   height: 700px;
 }
 
 .main-index img {
   opacity: 70%;
+  width: 100%;
 }
 
 .main-index .contenedor-info-index {
