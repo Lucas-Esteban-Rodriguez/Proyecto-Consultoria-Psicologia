@@ -15,26 +15,26 @@
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
   <nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md">
-    <div class="container-fluid d-flex justify-content-between">
-      <a class="navbar-brand logo-responsive" href="index.html"><img src="/img/WakeMind.png" alt="LOGO" width="50px"> Nombre Pág</a>
+    <div class="container-fluid d-flex justify-content-between w-100">
+      <a class="contenedor-logo">
+        <img class="logo" src="/img/Logo-WakeMind.png" alt="LOGO">
+        <img class="WakeMind" src="/img/nombre.png" alt="WakeMind">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-center">
+        <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-end">
           <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav__activo" href="nosotras.html">Nosotras</a>
           </li>
-          <li class="logo">
-            <a href="index.html"><img src="/img/WakeMind.png" alt="LOGO"></a>
-          </li>
-          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+          <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav" href="/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+          <li class="nav-item me-3">
             <a class="nav-link btn-nav">Información</a>
           </li>
         </ul>
@@ -42,26 +42,8 @@
     </div>
   </nav>
     <!--------------------------------------------- Main --------------------------------------------->
-    <main class="container-fluid main__nosotras">
-      <div class="card__nosotras card mt-5">
-          <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
-          <div class="perfil">
-            <p class="h1 nombre">Nombre</p>
-            <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
-          </div>
-          <div class="contenedor__redes">
-            <div class="contenedor-redes__nosotras">
-              <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-              <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-              <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-            </div>
-            <div class="email-whatsapp">
-              <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-              <a class="enviar__email btn me-2" href=""><div></div></a>
-            </div>
-          </div>
-      </div>
-      <div class="card__nosotras card mt-5">
+  <main class="container-fluid main__nosotras">
+    <div class="card__nosotras card mt-5">
         <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
         <div class="perfil">
           <p class="h1 nombre">Nombre</p>
@@ -78,26 +60,44 @@
             <a class="enviar__email btn me-2" href=""><div></div></a>
           </div>
         </div>
+    </div>
+    <div class="card__nosotras card mt-5">
+      <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
+      <div class="perfil">
+        <p class="h1 nombre">Nombre</p>
+        <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
       </div>
-      <div class="card__nosotras card mt-5">
-        <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
-        <div class="perfil">
-          <p class="h1 nombre">Nombre</p>
-          <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
+      <div class="contenedor__redes">
+        <div class="contenedor-redes__nosotras">
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
         </div>
-        <div class="contenedor__redes">
-          <div class="contenedor-redes__nosotras">
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          </div>
-          <div class="email-whatsapp">
-            <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-            <a class="enviar__email btn me-2" href=""><div></div></a>
-          </div>
+        <div class="email-whatsapp">
+          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
+          <a class="enviar__email btn me-2" href=""><div></div></a>
         </div>
       </div>
-    </main>
+    </div>
+    <div class="card__nosotras card mt-5">
+      <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
+      <div class="perfil">
+        <p class="h1 nombre">Nombre</p>
+        <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
+      </div>
+      <div class="contenedor__redes">
+        <div class="contenedor-redes__nosotras">
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+        </div>
+        <div class="email-whatsapp">
+          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
+          <a class="enviar__email btn me-2" href=""><div></div></a>
+        </div>
+      </div>
+    </div>
+  </main>
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

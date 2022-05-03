@@ -15,26 +15,26 @@
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
   <nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md">
-    <div class="container-fluid d-flex justify-content-between">
-      <a class="navbar-brand logo-responsive" href="index.html"><img src="/img/WakeMind.png" alt="LOGO" width="50px"> Nombre Pág</a>
+    <div class="container-fluid d-flex justify-content-between w-100">
+      <a class="contenedor-logo">
+        <img class="logo" src="/img/Logo-WakeMind.png" alt="LOGO">
+        <img class="WakeMind" src="/img/nombre.png" alt="WakeMind">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-center">
+        <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-end">
           <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav" href="nosotras.html">Nosotras</a>
           </li>
-          <li class="logo">
-            <a href="index.html"><img src="/img/WakeMind.png" alt="LOGO"></a>
-          </li>
-          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+          <li class="nav-item me-lg-3 me-md-3 me-0">
             <a class="nav-link btn-nav__activo" href="/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item ms-lg-3 ms-md-3 ms-0">
+          <li class="nav-item me-3">
             <a class="nav-link btn-nav">Información</a>
           </li>
         </ul>
@@ -43,8 +43,9 @@
   </nav>
 <!-- -----------------------------------------------Main-------------------------------------------------------------- -->
   <main class="container-fluid main__contacto">
+
     <div class="div-contacto">
-      <div class="card__contacto" id="card__contacto">
+      <div class="card__contacto" id="cardContacto">
         <div class="informacion__contacto">
           <p class="h1">Informacion de contacto</p>
           <p>Example123@Example123.com</p>
@@ -86,7 +87,7 @@
             <label for="radio" class="mt-2">
               <input type="checkbox" class="me-2" id="inputRadio"><p class="d-inline p-radio">Quiere reservar un turno y pagar.</p>
             </label>
-            <div class="botones__formulario" id="a">
+            <div class="botones__formulario" id="btnsForm">
               <button type="submit" onclick="preventDefault(e)" class="btn btn-primary btn-enviar">Enviar</button>
               <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>
             </div>
@@ -94,55 +95,32 @@
         </form>
       </div>
 
-      <div class="card__contacto" id="card__contacto">
-        <div class="informacion__contacto">
-          <p class="h1">Informacion de contacto</p>
-          <p>Example123@Example123.com</p>
-          <p>(+53)11 23456789</p>
-        </div>
-        <form class="formulario__contacto">
-          <div class="row">
-            <h1 class="col-12">Envia tu consulta</h1>
-            <label for="Nombre" class="col-6 mt-lg-4 mt-4 label-contacto">
-              Nombres: *
-              <input class="input-contacto" type="text" name="Nombre" required>
-            </label>
-            <label for="Apellido" class="col-6 mt-lg-4 mt-4 label-contacto">
-              Apellido: *
-              <input class="input-contacto" type="text" name="Apellido" required>
-            </label>
-            <label for="Email" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
-              Email: *
-              <input class="input-contacto" type="email" name="Email" required>
-            </label>
-            <label for="Celular" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
-              Cel:
-              <input class="input-contacto" type="tel" name="Celular">
-            </label>
-            <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center label-contacto">
-              Hacia: *
-              <select name="Elegir">
-                <option disabled selected>Elegir profesional</option>
-                <option>Paola</option>
-                <option>2</option>
-                <option>3</option>
-                <option>No sé</option>
-              </select>
-            </label>
-            <label for="Consulta" class="col-12 mt-lg-5 mt-4 label-contacto">
-              Consulta: *
-              <textarea name="Consulta" cols="30" rows="10" required></textarea>
-            </label>
-            <label for="radio" class="mt-2">
-              <input type="checkbox" class="me-2" id="inputRadio"><p class="d-inline p-radio">Quiere reservar un turno y pagar.</p>
-            </label>
-            <div class="botones__formulario" id="a">
-              <button type="submit" onclick="preventDefault(e)" class="btn btn-primary btn-enviar">Enviar</button>
-              <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>
-            </div>
-          </div>
+      <div class="card-contacto__turno d-flex flex-column align-items-center" id="divTurno">
+        <p class="h1 m-auto">Elija dia y horario</p>
+        <p>(En caso de no poder establecer una fecha exacta)</p>
+       <label for="rango">
+        <input name="rango" class="me-3 mb-3" type="checkbox" id="inputRango" onclick="Rango()">Elegir rango de dia y horario
+       </label>
+        <form class="formulario-turno m-auto">
+          <label class="col-12 label-turno" for="dia" id="labelDia">
+            Dia:*
+            <input class="input-turno" type="date">
+          </label>
+          <label class="col-12 label-turno mt-3" for="hora" id="labelHora">
+            Hora:*
+            <input class="input-turno" type="time">
+          </label>
+          <label for="aclaracion" class="col-12 label-turno mt-3">
+            Hacer alguna aclaracion:
+            <textarea name="aclaracion"></textarea>
+          </label>
         </form>
+        <div class="m-auto">
+          <button class="btn btn-danger" onclick="volverAContacto()">Volver</button>
+          <button class="btn btn-success" onclick="pasarAPagar()">Siguiente</button>
+        </div>
       </div>
+
     </div>
   </main>
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
