@@ -228,6 +228,7 @@ nav .btn-nav__activo::before {
   text-align: center;
   position: relative;
   height: 700px;
+  overflow: hidden;
 }
 
 .main-index .bg-wakemind {
