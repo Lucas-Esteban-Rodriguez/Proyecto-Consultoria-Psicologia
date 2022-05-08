@@ -1,110 +1,105 @@
 .main__contacto {
     width: 100%;
     height: 600px;
-    .div-contacto {
-        display: flex;
-        height: 100%;
+    .card__contacto {
+        @include flexbox-center;
         width: 100%;
+        height: 580px;
         border-radius: 20px;
-        .card__contacto {
+        box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #bebebe;
+        z-index: 0;
+        .informacion__contacto {
             @include flexbox-center;
-            width: 100%;
-            height: 580px;
-            border-radius: 20px;
-            box-shadow: 15px 15px 30px #bebebe,
-            -15px -15px 30px #bebebe;
-            z-index: 0;
-            .informacion__contacto {
-                @include flexbox-center;
-                flex-direction: column;
-                background-color: $azul;
-                width: 40%;
-                height: 100%;
-                border-top-left-radius: 20px;
-                border-bottom-left-radius: 20px;
-                p {
-                    text-align: center;
-                    font-weight: bold;
-                    color: $blanco;
-                }
-            }
-            .formulario__contacto {
-                padding: 20px 40px;
-                background-color: lightgray;
-                width: 60%;
-                height: 100%;
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
-                .botones__formulario {
-                    display: flex;
-                    justify-content: end;
-                    gap: 20px;
-                }
-                .label-contacto {
-                    font-size: $tamaño-fuente*1.2;
-                    font-weight: bold;
-                    .input-contacto {
-                        width: 100%;
-                        height: 30px;
-                        border: none;
-                        outline: none;
-                        background-color: transparent;
-                        border-bottom: 1px solid gray;
-                        &:focus {
-                            border-bottom: 1px solid $azul;
-                        }
-                    }
-                    textarea {
-                        @extend .input-contacto;
-                        resize: none;
-                    }
-                    select {
-                        @extend .input-contacto;
-                        width: 50%;
-                    }
-                }
-                h1 {
-                    width: 100%;
-                    height: 50px;
-                }
+            flex-direction: column;
+            background-color: $azul;
+            width: 40%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            p {
+                text-align: center;
+                font-weight: bold;
+                color: $blanco;
             }
         }
-        .card-contacto__turno {
-            opacity: 0;
-            pointer-events: none;
-            position: absolute;
-            left: 25%;
-            width: 50%;
-            height: 580px;
-            z-index: 1;
+        .formulario__contacto {
+            padding: 20px 40px;
             background-color: lightgray;
-            box-shadow: 15px 15px 30px #bebebe,
-            -15px -15px 30px #bebebe;
-            .formulario-turno {
-                @include flexbox-center;
-                flex-direction: column;
-                width: max-content;
-                .label-turno {
-                    font-weight: bold;
-                    font-size: $tamaño-fuente*1.2;
-                    .input-turno {
-                        margin: auto;
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 1px solid $gris;
-                        width: max-content;
-                        display: block;
-                        &:focus {
-                            outline: none;
-                            border-bottom: 1px solid $azul;
-                        }
+            width: 60%;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            .botones__formulario {
+                display: flex;
+                justify-content: end;
+                gap: 20px;
+            }
+            .label-contacto {
+                font-size: $tamaño-fuente*1.2;
+                font-weight: bold;
+                .input-contacto {
+                    width: 100%;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid gray;
+                    &:focus {
+                        border-bottom: 1px solid $azul;
                     }
-                    textarea {
-                        @extend .input-turno;
-                        width: 300px;
-                        height: 30px;
-                        resize: none;
+                }
+                textarea {
+                    @extend .input-contacto;
+                    resize: none;
+                }
+                select {
+                    @extend .input-contacto;
+                    width: 50%;
+                }
+            }
+            h1 {
+                width: 100%;
+                height: 50px;
+            }
+        }
+    }
+    .card-contacto__turno {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 100%;
+        height: 580px;
+        z-index: 1;
+        background-color: lightgray;
+        box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #bebebe;
+        .formulario-turno {
+            @include flexbox-center;
+            flex-direction: column;
+            width: max-content;
+            .label-turno {
+                font-weight: bold;
+                font-size: $tamaño-fuente*1.2;
+                .input-turno {
+                    margin: auto;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid $gris;
+                    width: max-content;
+                    display: block;
+                    &:focus {
+                        outline: none;
+                        border-bottom: 1px solid $azul;
                     }
+                }
+                textarea {
+                    @extend .input-turno;
+                    width: 300px;
+                    height: 30px;
+                    resize: none;
                 }
             }
         }

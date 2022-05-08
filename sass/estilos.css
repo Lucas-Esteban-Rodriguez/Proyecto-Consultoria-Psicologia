@@ -76,10 +76,9 @@
 }
 
 .paola-sottili {
-  background-image: url(/img/Paola-sottili.png);
+  background-image: url(/img/PaolaSottili1.png);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 nav {
@@ -269,8 +268,8 @@ nav .btn-nav__activo::before {
 }
 
 .section-info .card-index {
-  width: 190px;
-  height: 254px;
+  width: 300px;
+  height: 400px;
   position: relative;
   outline: 0.3em solid #0B653Fff;
   border-radius: 5px;
@@ -575,16 +574,7 @@ nav .btn-nav__activo::before {
   height: 600px;
 }
 
-.main__contacto .div-contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.main__contacto .div-contacto .card__contacto {
+.main__contacto .card__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +592,7 @@ nav .btn-nav__activo::before {
   z-index: 0;
 }
 
-.main__contacto .div-contacto .card__contacto .informacion__contacto {
+.main__contacto .card__contacto .informacion__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,13 +613,13 @@ nav .btn-nav__activo::before {
   border-bottom-left-radius: 20px;
 }
 
-.main__contacto .div-contacto .card__contacto .informacion__contacto p {
+.main__contacto .card__contacto .informacion__contacto p {
   text-align: center;
   font-weight: bold;
   color: #ffff;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto {
+.main__contacto .card__contacto .formulario__contacto {
   padding: 20px 40px;
   background-color: lightgray;
   width: 60%;
@@ -638,7 +628,7 @@ nav .btn-nav__activo::before {
   border-bottom-right-radius: 20px;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .botones__formulario {
+.main__contacto .card__contacto .formulario__contacto .botones__formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,12 +638,12 @@ nav .btn-nav__activo::before {
   gap: 20px;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto {
+.main__contacto .card__contacto .formulario__contacto .label-contacto {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto .input-contacto, .main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto textarea, .main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto select {
+.main__contacto .card__contacto .formulario__contacto .label-contacto .input-contacto, .main__contacto .card__contacto .formulario__contacto .label-contacto textarea, .main__contacto .card__contacto .formulario__contacto .label-contacto select {
   width: 100%;
   height: 30px;
   border: none;
@@ -662,29 +652,30 @@ nav .btn-nav__activo::before {
   border-bottom: 1px solid gray;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto .input-contacto:focus, .main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto textarea:focus, .main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto select:focus {
+.main__contacto .card__contacto .formulario__contacto .label-contacto .input-contacto:focus, .main__contacto .card__contacto .formulario__contacto .label-contacto textarea:focus, .main__contacto .card__contacto .formulario__contacto .label-contacto select:focus {
   border-bottom: 1px solid #4895ef;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto textarea {
+.main__contacto .card__contacto .formulario__contacto .label-contacto textarea {
   resize: none;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto .label-contacto select {
+.main__contacto .card__contacto .formulario__contacto .label-contacto select {
   width: 50%;
 }
 
-.main__contacto .div-contacto .card__contacto .formulario__contacto h1 {
+.main__contacto .card__contacto .formulario__contacto h1 {
   width: 100%;
   height: 50px;
 }
 
-.main__contacto .div-contacto .card-contacto__turno {
+.main__contacto .card-contacto__turno {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  left: 25%;
-  width: 50%;
+  top: 25%;
+  left: 0;
+  width: 100%;
   height: 580px;
   z-index: 1;
   background-color: lightgray;
@@ -692,7 +683,7 @@ nav .btn-nav__activo::before {
           box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
 }
 
-.main__contacto .div-contacto .card-contacto__turno .formulario-turno {
+.main__contacto .card-contacto__turno .formulario-turno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,12 +702,12 @@ nav .btn-nav__activo::before {
   width: max-content;
 }
 
-.main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno {
+.main__contacto .card-contacto__turno .formulario-turno .label-turno {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno .input-turno, .main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno textarea {
+.main__contacto .card-contacto__turno .formulario-turno .label-turno .input-turno, .main__contacto .card-contacto__turno .formulario-turno .label-turno textarea {
   margin: auto;
   background-color: transparent;
   border: none;
@@ -727,12 +718,12 @@ nav .btn-nav__activo::before {
   display: block;
 }
 
-.main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno .input-turno:focus, .main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno textarea:focus {
+.main__contacto .card-contacto__turno .formulario-turno .label-turno .input-turno:focus, .main__contacto .card-contacto__turno .formulario-turno .label-turno textarea:focus {
   outline: none;
   border-bottom: 1px solid #4895ef;
 }
 
-.main__contacto .div-contacto .card-contacto__turno .formulario-turno .label-turno textarea {
+.main__contacto .card-contacto__turno .formulario-turno .label-turno textarea {
   width: 300px;
   height: 30px;
   resize: none;
