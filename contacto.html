@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
-  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3" style="border: 5px solid red;">
+  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3">
     <div class="container-fluid d-flex justify-content-between">
       <a class="contenedor-logo">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
@@ -25,16 +25,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-end">
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav1">
             <a class="nav-link btn-nav" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav2">
             <a class="nav-link btn-nav" href="nosotras.html">Nosotras</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav3">
             <a class="nav-link btn-nav__activo" href="/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav4">
             <a class="nav-link btn-nav">Información</a>
           </li>
         </ul>
@@ -45,80 +45,94 @@
   <main class="container-fluid main__contacto mt-5 mb-5">
 
       <div class="card__contacto" id="cardContacto">
+
         <div class="informacion__contacto">
           <p class="h1">Informacion de contacto</p>
           <p>Example123@Example123.com</p>
           <p>(+53)11 23456789</p>
         </div>
-        <form class="formulario__contacto">
+
+        <form class="formulario__contacto" id="contact-form">
           <div class="row">
             <h1 class="col-12">Envia tu consulta</h1>
+            <input type="hidden" name="contact_number">
             <label for="Nombre" class="col-6 mt-lg-4 mt-4 label-contacto">
               Nombres: *
-              <input class="input-contacto" type="text" name="Nombre" required>
+              <input class="input-contacto" type="text" name="Nombre" id="Nombre" required>
             </label>
             <label for="Apellido" class="col-6 mt-lg-4 mt-4 label-contacto">
               Apellido: *
-              <input class="input-contacto" type="text" name="Apellido" required>
+              <input class="input-contacto" type="text" name="Apellido" id="Apellido" required>
             </label>
             <label for="Email" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
               Email: *
-              <input class="input-contacto" type="email" name="Email" required>
+              <input class="input-contacto" type="email" name="Email" id="Email" required>
             </label>
             <label for="Celular" class="col-lg-6 col-sm-12 mt-lg-5 mt-4 label-contacto">
               Cel:
-              <input class="input-contacto" type="tel" name="Celular">
+              <input class="input-contacto" type="tel" name="Celular" id="Celular">
             </label>
             <label for="Elegir" class="col-12 mt-lg-5 mt-4 d-flex flex-column align-items-center label-contacto">
               Hacia: *
-              <select name="Elegir">
-                <option disabled selected>Elegir profesional</option>
+              <select name="Elegir" id="Hacia">
+                <option selected>No sé</option>
                 <option>Paola</option>
                 <option>2</option>
                 <option>3</option>
-                <option>No sé</option>
               </select>
             </label>
             <label for="Consulta" class="col-12 mt-lg-5 mt-4 label-contacto">
               Consulta: *
-              <textarea name="Consulta" cols="30" rows="10" required></textarea>
+              <textarea name="Consulta" id="Consulta" cols="30" rows="10" required></textarea>
             </label>
             <label for="radio" class="mt-2">
               <input type="checkbox" class="me-2" id="inputRadio"><p class="d-inline p-radio">Quiere reservar un turno y pagar.</p>
             </label>
             <div class="botones__formulario" id="btnsForm">
-              <button type="submit" onclick="preventDefault(e)" class="btn btn-primary btn-enviar">Enviar</button>
-              <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>
+              <input type="submit" value="Enviar Email" id="btnEnviar" class="btn btn-primary btn-enviar"/>
+              <button type="reset" class="btn btn-danger">Reiniciar</button>
             </div>
           </div>
         </form>
+
       </div>
 
-      <div class="card-contacto__turno d-flex flex-column align-items-center" id="divTurno">
-        <p class="h1 m-auto">Elija dia y horario</p>
-        <p>(En caso de no poder establecer una fecha exacta)</p>
-       <label for="rango">
-        <input name="rango" class="me-3 mb-3" type="checkbox" id="inputRango" onclick="Rango()">Elegir rango de dia y horario
-       </label>
-        <form class="formulario-turno m-auto">
-          <label class="col-12 label-turno" for="dia" id="labelDia">
-            Dia:*
-            <input class="input-turno" type="date">
-          </label>
-          <label class="col-12 label-turno mt-3" for="hora" id="labelHora">
-            Hora:*
-            <input class="input-turno" type="time">
-          </label>
-          <label for="aclaracion" class="col-12 label-turno mt-3">
-            Hacer alguna aclaracion:
-            <textarea name="aclaracion"></textarea>
-          </label>
-        </form>
-        <div class="m-auto">
-          <button class="btn btn-danger" onclick="volverAContacto()">Volver</button>
-          <button class="btn btn-success" onclick="pasarAPagar()">Siguiente</button>
+      <div class="card-contacto__turno d-flex" id="divTurno">
+
+        <div class="informacion__contacto d-flex flex-column align-items-center">
+          <p class="h1">Informacion de contacto</p>
+          <p>Example123@Example123.com</p>
+          <p>(+53)11 23456789</p>
         </div>
+
+        <div class="turnos d-flex flex-column align-items-center">
+          <p class="h1 m-auto">Elija dia y horario</p>
+          <p>(En caso de no poder establecer una fecha exacta)</p>
+         <label for="rango">
+          <input name="rango" class="me-3 mb-3" type="checkbox" id="inputRango" onclick="Rango()">Elegir rango de dia y horario
+         </label>
+          <form class="formulario-turno m-auto">
+            <label class="col-12 label-turno" for="dia" id="labelDia">
+              Dia:*
+              <input class="input-turno" type="date">
+            </label>
+            <label class="col-12 label-turno mt-3" for="hora" id="labelHora">
+              Hora:*
+              <input class="input-turno" type="time">
+            </label>
+            <label for="aclaracion" class="col-12 label-turno mt-3">
+              Hacer alguna aclaracion:
+              <textarea name="aclaracion"></textarea>
+            </label>
+          </form>
+          <div class="m-auto">
+            <button class="btn btn-danger" onclick="volverAContacto()">Volver</button>
+            <button class="btn btn-success" onclick="pasarAPagar()">Siguiente</button>
+          </div>
+        </div>
+
       </div>
+        
 
   </main>
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
@@ -141,5 +155,12 @@
 <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
   <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/contacto.js"></script>
+  <!---------------------------------------------------- EMAIL.js--------------------------------- -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('bwb8sKpgHncOZ1URx')
+</script>
 </body>
 </html>

@@ -4,6 +4,8 @@
         <!-- ---------------------------------------Boostrap------------------------------------------------------ -->
         <link rel="stylesheet" href="/Bootstrap/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+        <!-- ---------------------------------------AOS.js-------------------------------------------------------- -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- -------------------------------------------HTML------------------------------------------------------- -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +16,7 @@
     </head>
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
-  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3" style="border: 5px solid red;">
+  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3">
     <div class="container-fluid d-flex justify-content-between">
       <a class="contenedor-logo">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
@@ -25,16 +27,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-end">
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav1">
             <a class="nav-link btn-nav" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav2">
             <a class="nav-link btn-nav__activo" href="nosotras.html">Nosotras</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav3">
             <a class="nav-link btn-nav" href="/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item me-md-3 me-0">
+          <li class="nav-item me-md-3 me-0 btnNav4">
             <a class="nav-link btn-nav">Información</a>
           </li>
         </ul>
@@ -42,9 +44,9 @@
     </div>
   </nav>
     <!--------------------------------------------- Main --------------------------------------------->
-  <main class="container-fluid main__nosotras" onscroll="scrollNosotras">
+  <main class="container-fluid main__nosotras">
 
-    <div class="card__nosotras card mt-5" id="cardNosotras">
+    <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-right" data-aos-duration="1000">
       <div class="contenedor-imagen paola-sottili ms-md-3"></div>
       <div class="perfil">
         <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Counsuler)</span></p>
@@ -63,10 +65,10 @@
       </div>
     </div>
 
-    <div class="card__nosotras card mt-5" onscroll='scrollNosotras'>
-      <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
+    <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-left" data-aos-duration="1000">
+      <div class="contenedor-imagen paola-sottili ms-md-3"></div>
       <div class="perfil">
-        <p class="h1 nombre">Nombre</p>
+        <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Counsuler)</span></p>
         <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
       </div>
       <div class="contenedor__redes">
@@ -81,10 +83,11 @@
         </div>
       </div>
     </div>
-    <div class="card__nosotras card mt-5">
-      <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
+
+    <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-right" data-aos-duration="1000">
+      <div class="contenedor-imagen paola-sottili ms-md-3"></div>
       <div class="perfil">
-        <p class="h1 nombre">Nombre</p>
+        <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Counsuler)</span></p>
         <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
       </div>
       <div class="contenedor__redes">
@@ -99,6 +102,7 @@
         </div>
       </div>
     </div>
+
   </main>
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
   <div class="container-fluid">
@@ -120,5 +124,10 @@
 <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
   <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/nosotras.js"></script>
+    <!-- ----------------------------------------------------AOS.js-------------------------------------------- -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <!-- ---------------------------------------Boostrap------------------------------------------------------ -->
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <!-- ---------------------------------------AOS.js-------------------------------------------------------- -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- -------------------------------------------HTML------------------------------------------------------- -->
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
 </head>
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
-  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3" style="border: 5px solid red;">
+  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3">
     <div class="container-fluid d-flex justify-content-between">
       <a class="contenedor-logo">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
@@ -43,7 +44,7 @@
     </div>
   </nav>
   <!-- ----------------------------------------carrusel----------------------------------------------- -->
-  <section class="container-fluid" style="border: 5px solid black;">
+  <section class="container-fluid">
     <div id="carouselExampledark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -68,7 +69,7 @@
   </section>
   <!---------------------------------------------- main ---------------------------------------->
   
-  <main class="container-fluid main-index mt-5 mb-5" style="border: 5px solid black;">
+  <main class="container-fluid main-index mt-5 mb-5">
     <div class="bg-wakemind"></div>
     <div class="contenedor-info-index">
       <div class="col-4 d-flex flex-column info-index info-index-mision">
@@ -87,43 +88,45 @@
 
   </main>
   <!-- ------------------------------------------------section------------------------------------------------- -->
-  <section class="container-fluid section-info py-5 px-0" style="border: 5px solid black;">
+  <section class="container-fluid section-info py-5 px-0">
     <div class="container-fluid contenedor-titulo__2 mb-5">
       <h2 class="mb-0 h1">Titulo</h2>
     </div>
     <div class="container-fluid d-flex flex-md-row flex-column align-items-center justify-content-evenly px-0">
 
-      <div class="card-index paola-sottili mb-md-0 mb-5" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+      <div class="card-index paola-sottili mb-md-0 mb-5" data-aos="fade-down-right" data-aos-duration="1000">
         <div class="card-info">
           <p class="title">Paola Sottili</p>
           <p class="subtitle">Profesión</p>
         </div>
         <div class="card-info__hover">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, rerum consectetur officiis exercitationem minima quasi eius.</p>
-            <a href="contacto.html#card__contacto">Contratar</a>
+            <a href="contacto.html#cardContacto">Contratar</a>
         </div>
       </div>
 
-      <div class="card-index paola-sottili mb-md-0 mb-5" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+      <div class="card-index paola-sottili mb-md-0 mb-5" data-aos="fade-down" data-aos-duration="1000">
         <div class="card-info">
           <p class="title">Paola Sottili</p>
           <p class="subtitle">Profesión</p>
         </div>
         <div class="card-info__hover">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, rerum consectetur officiis exercitationem minima quasi eius.</p>
-            <a href="contacto.html#card__contacto">Contratar</a>
+            <a href="contacto.html#cardContacto">Contratar</a>
         </div>
       </div>
-      <div class="card-index paola-sottili" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+
+      <div class="card-index paola-sottili mb-md-0 mb-5" data-aos="fade-down-left" data-aos-duration="1000">
         <div class="card-info">
           <p class="title">Paola Sottili</p>
           <p class="subtitle">Profesión</p>
         </div>
         <div class="card-info__hover">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, rerum consectetur officiis exercitationem minima quasi eius.</p>
-            <a href="contacto.html#card__contacto">Contratar</a>
+            <a href="contacto.html#cardContacto">Contratar</a>
         </div>
       </div>
+
     </div>
   </section>
   <!-- -----------------------------------------------------Footer------------------------------------------ -->
@@ -145,6 +148,7 @@
     </div>
   <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
   <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ----------------------------------------------------AOS.js-------------------------------------------- -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init()

@@ -1,9 +1,5 @@
 // Contacto
 
-function preventDefault(e) {
-    e.target.preventDefault
-}
-
 const inputRadio = document.getElementById('inputRadio')
 const botonesFormulario = document.getElementById('btnsForm')
 
@@ -11,15 +7,15 @@ inputRadio.onchange = () => {
     if (inputRadio.checked) {
         botonesFormulario.innerHTML = '<button type="button" onclick="pasarATurno()" class="btn btn-success" id="btnSiguiente">Siguiente</button> <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>'
     }else {
-        botonesFormulario.innerHTML = '<button type="submit" onclick="preventDefault(e)" class="btn btn-primary">Enviar</button><button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>'
+        botonesFormulario.innerHTML = '<input type="submit" id="btnEnviar" class="btn btn-primary" value="Enviar Email"/><button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>'
     }
 }
 
 function pasarATurno() {
-    const divTurno = document.getElementById('divTurno')
-    divTurno.classList.add('aparecer')
     const cardContacto = document.getElementById('cardContacto')
     cardContacto.classList.add('desaparecer')
+    const divTurno = document.getElementById('divTurno')
+     divTurno.classList.add('aparecer')
 }
 
 // Turno
@@ -46,3 +42,26 @@ function volverAContacto() {
     const cardContacto = document.getElementById('cardContacto')
     cardContacto.classList.remove('desaparecer')
 }
+
+// EMAIL.js
+
+const btnEnviar = document.getElementById('btnEnviar');
+
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btnEnviar.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_xu1vj6i';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btnEnviar.value = 'Enviar';
+      alert('Enviado!');
+    }, (err) => {
+      btnEnviar.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});

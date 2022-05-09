@@ -309,8 +309,6 @@ nav .btn-nav__activo::before {
   border-radius: 5px;
   z-index: 1;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .section-info .card-index:hover {
@@ -596,7 +594,10 @@ nav .btn-nav__activo::before {
 
 .main__contacto {
   width: 100%;
-  height: 600px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
 }
 
 .main__contacto .card__contacto {
@@ -668,7 +669,7 @@ nav .btn-nav__activo::before {
   font-weight: bold;
 }
 
-.main__contacto .card__contacto .formulario__contacto .label-contacto .input-contacto, .main__contacto .card__contacto .formulario__contacto .label-contacto textarea, .main__contacto .card__contacto .formulario__contacto .label-contacto select {
+.main__contacto .card__contacto .formulario__contacto .input-contacto, .main__contacto .card__contacto .formulario__contacto textarea, .main__contacto .card__contacto .formulario__contacto select {
   width: 100%;
   height: 30px;
   border: none;
@@ -677,15 +678,15 @@ nav .btn-nav__activo::before {
   border-bottom: 1px solid gray;
 }
 
-.main__contacto .card__contacto .formulario__contacto .label-contacto .input-contacto:focus, .main__contacto .card__contacto .formulario__contacto .label-contacto textarea:focus, .main__contacto .card__contacto .formulario__contacto .label-contacto select:focus {
+.main__contacto .card__contacto .formulario__contacto .input-contacto:focus, .main__contacto .card__contacto .formulario__contacto textarea:focus, .main__contacto .card__contacto .formulario__contacto select:focus {
   border-bottom: 1px solid #4895ef;
 }
 
-.main__contacto .card__contacto .formulario__contacto .label-contacto textarea {
+.main__contacto .card__contacto .formulario__contacto textarea {
   resize: none;
 }
 
-.main__contacto .card__contacto .formulario__contacto .label-contacto select {
+.main__contacto .card__contacto .formulario__contacto select {
   width: 50%;
 }
 
@@ -698,17 +699,42 @@ nav .btn-nav__activo::before {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  top: 25%;
-  left: 0;
-  width: 100%;
-  height: 580px;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
   z-index: 1;
   background-color: lightgray;
   -webkit-box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
           box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
 }
 
-.main__contacto .card-contacto__turno .formulario-turno {
+.main__contacto .card-contacto__turno .informacion__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4895ef;
+  width: 40%;
+  height: 100%;
+}
+
+.main__contacto .card-contacto__turno .informacion__contacto p {
+  text-align: center;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.main__contacto .card-contacto__turno .turnos {
+  width: 60%;
+}
+
+.main__contacto .card-contacto__turno .turnos .formulario-turno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,12 +753,12 @@ nav .btn-nav__activo::before {
   width: max-content;
 }
 
-.main__contacto .card-contacto__turno .formulario-turno .label-turno {
+.main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.main__contacto .card-contacto__turno .formulario-turno .label-turno .input-turno, .main__contacto .card-contacto__turno .formulario-turno .label-turno textarea {
+.main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno .input-turno, .main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno textarea {
   margin: auto;
   background-color: transparent;
   border: none;
@@ -743,12 +769,12 @@ nav .btn-nav__activo::before {
   display: block;
 }
 
-.main__contacto .card-contacto__turno .formulario-turno .label-turno .input-turno:focus, .main__contacto .card-contacto__turno .formulario-turno .label-turno textarea:focus {
+.main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno .input-turno:focus, .main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno textarea:focus {
   outline: none;
   border-bottom: 1px solid #4895ef;
 }
 
-.main__contacto .card-contacto__turno .formulario-turno .label-turno textarea {
+.main__contacto .card-contacto__turno .turnos .formulario-turno .label-turno textarea {
   width: 300px;
   height: 30px;
   resize: none;
@@ -759,13 +785,39 @@ nav .btn-nav__activo::before {
 }
 
 .aparecer {
+  -webkit-animation: aparecer forwards 1.5s;
+          animation: aparecer forwards 1.5s;
   pointer-events: all !important;
-  opacity: 100% !important;
 }
 
 .desaparecer {
+  -webkit-animation: desaparecer forwards 1s;
+          animation: desaparecer forwards 1s;
   pointer-events: none !important;
-  opacity: 0 !important;
+}
+
+@-webkit-keyframes desaparecer {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes desaparecer {
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes aparecer {
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -947,16 +999,17 @@ nav .btn-nav__activo::before {
   }
   .main__contacto .card__contacto {
     width: 100%;
-    height: 500px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .main__contacto {
-    height: 1000px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .main__contacto .card__contacto {
-    height: 800px;
+    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -974,6 +1027,10 @@ nav .btn-nav__activo::before {
   }
   .main__contacto .card__contacto .formulario__contacto div label select {
     width: 60%;
+  }
+  .main__contacto .card-contacto__turno {
+    width: 100%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
