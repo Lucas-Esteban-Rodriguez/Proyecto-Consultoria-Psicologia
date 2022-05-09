@@ -1,3 +1,13 @@
+// Animaciones
+
+@keyframes btnNav1 {
+    from {
+        transform: translateY(-100px);
+    }
+}
+
+// Navbar
+
 nav {
     opacity: 95%;
     padding: 0!important;
@@ -56,4 +66,16 @@ nav {
             bottom: 0;
         }
     }
+}
+.btnNav1 {
+    animation: btnNav1 forwards 1s;
+}
+.btnNav2 {
+    animation: btnNav1 forwards 1.50s;
+}
+.btnNav3 {
+    animation: btnNav1 forwards 2s;
+}
+.btnNav4 {
+    animation: btnNav1 forwards 2.50s;
 }

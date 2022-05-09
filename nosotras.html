@@ -42,26 +42,28 @@
     </div>
   </nav>
     <!--------------------------------------------- Main --------------------------------------------->
-  <main class="container-fluid main__nosotras">
-    <div class="card__nosotras card mt-5">
-        <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
-        <div class="perfil">
-          <p class="h1 nombre">Nombre</p>
-          <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
+  <main class="container-fluid main__nosotras" onscroll="scrollNosotras">
+
+    <div class="card__nosotras card mt-5" id="cardNosotras">
+      <div class="contenedor-imagen paola-sottili ms-md-3"></div>
+      <div class="perfil">
+        <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Counsuler)</span></p>
+        <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
+      </div>
+      <div class="contenedor__redes">
+        <div class="contenedor-redes__nosotras">
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
+          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
         </div>
-        <div class="contenedor__redes">
-          <div class="contenedor-redes__nosotras">
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-            <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          </div>
-          <div class="email-whatsapp">
-            <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-            <a class="enviar__email btn me-2" href=""><div></div></a>
-          </div>
+        <div class="email-whatsapp">
+          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
+          <a class="enviar__email btn me-2" href=""><div></div></a>
         </div>
+      </div>
     </div>
-    <div class="card__nosotras card mt-5">
+
+    <div class="card__nosotras card mt-5" onscroll='scrollNosotras'>
       <img class="ms-lg-3 ms-md-3 ms-0" src="/img/Logo.png" alt="">
       <div class="perfil">
         <p class="h1 nombre">Nombre</p>
@@ -117,5 +119,6 @@
   </div>
 <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
   <script src="/Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/nosotras.js"></script>
 </body>
 </html>

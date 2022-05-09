@@ -81,6 +81,20 @@
   background-position-y: center;
 }
 
+@-webkit-keyframes btnNav1 {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes btnNav1 {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
 nav {
   opacity: 95%;
   padding: 0 !important;
@@ -159,6 +173,26 @@ nav .btn-nav__activo::before {
   background-color: #0B653Fff;
   right: 0;
   bottom: 0;
+}
+
+.btnNav1 {
+  -webkit-animation: btnNav1 forwards 1s;
+          animation: btnNav1 forwards 1s;
+}
+
+.btnNav2 {
+  -webkit-animation: btnNav1 forwards 1.50s;
+          animation: btnNav1 forwards 1.50s;
+}
+
+.btnNav3 {
+  -webkit-animation: btnNav1 forwards 2s;
+          animation: btnNav1 forwards 2s;
+}
+
+.btnNav4 {
+  -webkit-animation: btnNav1 forwards 2.50s;
+          animation: btnNav1 forwards 2.50s;
 }
 
 .btn-footer, .btn-footer__activo {
@@ -403,8 +437,8 @@ nav .btn-nav__activo::before {
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.main__nosotras .card__nosotras img {
-  width: 30%;
+.main__nosotras .card__nosotras .contenedor-imagen {
+  width: 35%;
   height: 95%;
 }
 
@@ -414,16 +448,7 @@ nav .btn-nav__activo::before {
 }
 
 .main__nosotras .card__nosotras .perfil .nombre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
+  text-align: center;
   height: 10%;
 }
 
