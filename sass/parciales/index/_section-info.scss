@@ -27,20 +27,46 @@
             width: 100%;
             height: 100%;
             border-radius: 5px;
-            p {
+            ul {
                 margin: auto;
-                padding: 0 20px;
+                .especialidad {
+                    font-weight: bold;
+                    padding: 5px 0;
+                    list-style-type:square;
+                    opacity: 0;
+                }
             }
-            a {
+            .btn-contratar {
+                border-radius: 5px;
                 text-decoration: none;
                 color: $azul;
                 margin-bottom: 10px;
                 transform: 1s;
                 font-weight: bold;
+                transform: scale(130%);
+                padding: 5px;
             }
         }
         &:hover .card-info__hover {
             opacity: 100%;
+        }
+        &:hover .esp-1 {
+            animation: especialidad 1s .8s forwards;
+        }
+        &:hover .esp-2 {
+            animation: especialidad 1s 1.2s forwards;
+        }
+        &:hover .esp-3 {
+            animation: especialidad 1s 1.6s forwards;
+        }
+        &:hover .esp-4 {
+            animation: especialidad 1s 2s forwards;
+        }
+        &:hover .esp-5 {
+            animation: especialidad 1s 2.4s forwards;
+        }
+        &:hover .btn-contratar {
+            animation: contratar 1.5s .8s alternate linear infinite;
         }
     }
     .card-info {

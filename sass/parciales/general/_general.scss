@@ -20,6 +20,19 @@ $bordo: #941b0c;
     }
 }
 
+@keyframes especialidad {
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes contratar {
+    to {
+        background-color: $azul;
+        color: $blanco;
+    }
+}
+
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
     display: flex;
@@ -49,6 +62,9 @@ $bordo: #941b0c;
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden
+}
 .contenedor-titulo__1 {
     @include flexbox-center;
     height: 100px;
@@ -75,7 +91,26 @@ $bordo: #941b0c;
     }
 }
 .paola-sottili {
-    background-image: url(/img/PaolaSottili1.png);
+    background-image: url(/img/Chicas/PaolaSottili1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sol-monti {
+    background-image: url(/img/Chicas/SolMonti.jpeg);
+    background-position: bottom;
+}
+.barbara-moreno {
+    background-image: url(/img/Chicas/BarbaraMoreno.jpeg);
+    background-position: center;
     background-size: cover;
-    background-position-y: center;
+}
+.bg-verdeWake {
+    background-color: $verde-wake;
+    color: $blanco;
+}
+.text-verdeWake {
+    color: $verde-wake;
+    font-weight: bold;
+    border-bottom: 2px solid $verde-wake;
 }

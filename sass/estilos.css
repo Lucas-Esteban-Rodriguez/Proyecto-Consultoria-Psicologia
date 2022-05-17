@@ -13,12 +13,42 @@
   }
 }
 
+@-webkit-keyframes especialidad {
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes especialidad {
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes contratar {
+  to {
+    background-color: #4895ef;
+    color: #ffff;
+  }
+}
+
+@keyframes contratar {
+  to {
+    background-color: #4895ef;
+    color: #ffff;
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .contenedor-titulo__1 {
@@ -76,9 +106,32 @@
 }
 
 .paola-sottili {
-  background-image: url(/img/PaolaSottili1.png);
+  background-image: url(/img/Chicas/PaolaSottili1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sol-monti {
+  background-image: url(/img/Chicas/SolMonti.jpeg);
+  background-position: bottom;
+}
+
+.barbara-moreno {
+  background-image: url(/img/Chicas/BarbaraMoreno.jpeg);
+  background-position: center;
   background-size: cover;
-  background-position-y: center;
+}
+
+.bg-verdeWake {
+  background-color: #0B653Fff;
+  color: #ffff;
+}
+
+.text-verdeWake {
+  color: #0B653Fff;
+  font-weight: bold;
+  border-bottom: 2px solid #0B653Fff;
 }
 
 @-webkit-keyframes btnNav1 {
@@ -249,19 +302,11 @@ nav .btn-nav__activo::before {
   height: 550px;
 }
 
-.img-carrusel1 {
-  width: 85%;
-}
-
-.img-carrusel2 {
-  width: 70%;
-}
-
 .main-index {
+  border-top: 2px solid #0B653Fff;
   text-align: center;
   position: relative;
   height: 700px;
-  overflow: hidden;
 }
 
 .main-index .bg-wakemind {
@@ -285,14 +330,28 @@ nav .btn-nav__activo::before {
   height: 100%;
 }
 
+.main-index .contenedor-info-index .info-index {
+  position: absolute;
+  width: 600px;
+  padding: 0 20px;
+}
+
 .main-index .contenedor-info-index .info-index .h2 {
   font-weight: bold;
 }
 
+.main-index .contenedor-info-index .info-index-vision {
+  right: 0;
+  margin-top: 150px;
+}
+
+.main-index .contenedor-info-index .info-index-mision {
+  margin-top: 150px;
+}
+
 .main-index .contenedor-info-index .info-index-valor {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  left: 30%;
+  bottom: 0;
 }
 
 .section-info {
@@ -346,22 +405,62 @@ nav .btn-nav__activo::before {
   border-radius: 5px;
 }
 
-.section-info .card-index .card-info__hover p {
+.section-info .card-index .card-info__hover ul {
   margin: auto;
-  padding: 0 20px;
 }
 
-.section-info .card-index .card-info__hover a {
+.section-info .card-index .card-info__hover ul .especialidad {
+  font-weight: bold;
+  padding: 5px 0;
+  list-style-type: square;
+  opacity: 0;
+}
+
+.section-info .card-index .card-info__hover .btn-contratar {
+  border-radius: 5px;
   text-decoration: none;
   color: #4895ef;
   margin-bottom: 10px;
   -webkit-transform: 1s;
           transform: 1s;
   font-weight: bold;
+  -webkit-transform: scale(130%);
+          transform: scale(130%);
+  padding: 5px;
 }
 
 .section-info .card-index:hover .card-info__hover {
   opacity: 100%;
+}
+
+.section-info .card-index:hover .esp-1 {
+  -webkit-animation: especialidad 1s .8s forwards;
+          animation: especialidad 1s .8s forwards;
+}
+
+.section-info .card-index:hover .esp-2 {
+  -webkit-animation: especialidad 1s 1.2s forwards;
+          animation: especialidad 1s 1.2s forwards;
+}
+
+.section-info .card-index:hover .esp-3 {
+  -webkit-animation: especialidad 1s 1.6s forwards;
+          animation: especialidad 1s 1.6s forwards;
+}
+
+.section-info .card-index:hover .esp-4 {
+  -webkit-animation: especialidad 1s 2s forwards;
+          animation: especialidad 1s 2s forwards;
+}
+
+.section-info .card-index:hover .esp-5 {
+  -webkit-animation: especialidad 1s 2.4s forwards;
+          animation: especialidad 1s 2.4s forwards;
+}
+
+.section-info .card-index:hover .btn-contratar {
+  -webkit-animation: contratar 1.5s .8s alternate linear infinite;
+          animation: contratar 1.5s .8s alternate linear infinite;
 }
 
 .section-info .card-info {
@@ -430,7 +529,6 @@ nav .btn-nav__activo::before {
           flex-direction: row;
   width: 85%;
   height: 30%;
-  background: #ececec;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
