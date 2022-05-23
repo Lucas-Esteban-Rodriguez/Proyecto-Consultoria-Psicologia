@@ -340,6 +340,18 @@ nav .btn-nav__activo::before {
   z-index: 2;
 }
 
+.btnNav6 {
+  -webkit-animation: btnNav1 forwards 3.5s;
+          animation: btnNav1 forwards 3.5s;
+  z-index: 2;
+}
+
+.btnNav7 {
+  -webkit-animation: btnNav1 forwards 4s;
+          animation: btnNav1 forwards 4s;
+  z-index: 2;
+}
+
 .btn-footer, .btn-footer__activo {
   position: relative;
   z-index: 1;
