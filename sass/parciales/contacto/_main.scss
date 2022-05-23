@@ -13,7 +13,7 @@
         .informacion__contacto {
             @include flexbox-center;
             flex-direction: column;
-            background-color: $azul;
+            background-color: $blanco;
             width: 40%;
             height: 100%;
             border-top-left-radius: 20px;
@@ -21,7 +21,7 @@
             p {
                 text-align: center;
                 font-weight: bold;
-                color: $blanco;
+                color: $negro-claro;
             }
         }
         .formulario__contacto {

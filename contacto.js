@@ -3,14 +3,6 @@
 const inputRadio = document.getElementById('inputRadio')
 const botonesFormulario = document.getElementById('btnsForm')
 
-inputRadio.onchange = () => {
-    if (inputRadio.checked) {
-        botonesFormulario.innerHTML = '<button type="button" onclick="pasarATurno()" class="btn btn-success" id="btnSiguiente">Siguiente</button> <button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>'
-    }else {
-        botonesFormulario.innerHTML = '<input type="submit" id="btnEnviar" class="btn btn-primary" value="Enviar Email"/><button type="reset" onclick="preventDefault(e)" class="btn btn-danger">Reiniciar</button>'
-    }
-}
-
 function pasarATurno() {
     const cardContacto = document.getElementById('cardContacto')
     cardContacto.classList.add('desaparecer')
@@ -59,7 +51,11 @@ document.getElementById('contact-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btnEnviar.value = 'Enviar';
-      alert('Enviado!');
+      if (inputRadio.checked) {
+          pasarATurno()
+      } else {
+          alert('Enviado!');
+      }
     }, (err) => {
       btnEnviar.value = 'Enviar';
       alert(JSON.stringify(err));

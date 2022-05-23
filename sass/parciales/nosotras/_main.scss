@@ -33,57 +33,6 @@
             flex-direction: column;
             height: 95%;
             width: 20%;
-            .email-whatsapp {
-                display: flex;
-                flex-direction: column;
-                align-self: flex-end;
-                margin-bottom: 24px;
-                .enviar__whatsapp {
-                    @include flexbox-center;
-                    height: 50px;
-                    background-color: $verde__whatsapp;
-                    color: $blanco;
-                    &::before {
-                        margin-left: 20px;
-                        content: 'Enviar';
-                    }
-                    &:hover::before {
-                        content: '';
-                        margin-left: 0;
-                    }
-                    div {
-                        width: 50%;
-                        height: 100%;
-                        background-image: url(/img/whatsapp.png);
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-                .enviar__email {
-                    @include flexbox-center;
-                    width: 130px;
-                    height: 50px;
-                    background-color: $bordo;
-                    color: $blanco;
-                    &::before {
-                        margin-left: 20px;
-                        content: 'Enviar';
-                    }
-                    &:hover::before {
-                        content: '';
-                        margin-left: 0;
-                    }
-                    div {
-                        width: 50%;
-                        height: 100%;
-                        background-image: url(/img/gmail.png);
-                        background-position: center;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                    }
-                }
-            }
             .contenedor-redes__nosotras {
                 width: 100%;
                 height: 60%;
