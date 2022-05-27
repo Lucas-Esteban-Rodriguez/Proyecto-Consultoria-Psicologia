@@ -1,5 +1,23 @@
+@media screen and (max-width: 768px) {
+    .main-index {
+        .bg-wakemind {
+            background-position: center;
+            background-size: 65%;
+        }
+    }
+}
+
 @media screen and (max-width: 425px) {
-    .lead {
-        font-size: .875rem;
+    .main-index {
+        .lead {
+            font-size: .875rem;
+        }
+        .bg-wakemind {
+            background-size: 100%;
+        }
+        .info-index-valor {
+            width: 100%;
+            margin-top: 50px;
+        }
     }
 }

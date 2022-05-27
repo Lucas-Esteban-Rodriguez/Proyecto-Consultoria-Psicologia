@@ -7,12 +7,12 @@
     }
     .p-banner2 {
         p {
-            font-size: .875rem;
+            font-size: 1.3rem;
         }
     }
     .p2-banner2 {
         p {
-            font-size: .875rem;
+            font-size: 1.5rem;
         }
     }
 }
@@ -20,5 +20,15 @@
 @media screen and (max-width: 425px) {
     .img-carrusel {
         height: 250px;
+    }
+    .p-banner2 {
+        p {
+            font-size: .875rem;
+        }
+    }
+    .p2-banner2 {
+        p {
+            font-size: .875rem;
+        }
     }
 }

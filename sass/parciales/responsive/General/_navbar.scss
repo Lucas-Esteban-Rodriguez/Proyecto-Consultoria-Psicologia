@@ -1,7 +1,4 @@
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
     nav {
         .contenedor-logo {
             width: 200px;
@@ -10,9 +7,6 @@
 }
 
 @media screen and (max-width: 426px) {
-    body {
-        overflow-x: hidden;
-    }
     nav {
         .contenedor-logo {
             width: max-content;
