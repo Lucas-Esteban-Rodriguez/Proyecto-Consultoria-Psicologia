@@ -10,20 +10,6 @@
         box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #bebebe;
         z-index: 0;
-        .informacion__contacto {
-            @include flexbox-center;
-            flex-direction: column;
-            background-color: $blanco;
-            width: 40%;
-            height: 100%;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-            p {
-                text-align: center;
-                font-weight: bold;
-                color: $negro-claro;
-            }
-        }
         .formulario__contacto {
             padding: 20px 40px;
             background-color: lightgray;
@@ -77,17 +63,6 @@
         background-color: lightgray;
         box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #bebebe;
-        .informacion__contacto {
-            @include flexbox-center;
-            background-color: $azul;
-            width: 40%;
-            height: 100%;
-            p {
-                text-align: center;
-                font-weight: bold;
-                color: $blanco;
-            }
-        }
         .turnos {
             width: 60%;
             .formulario-turno {
@@ -117,6 +92,20 @@
                     }
                 }
             }
+        }
+    }
+    .informacion__contacto {
+        @include flexbox-center;
+        flex-direction: column;
+        background-color: $blanco;
+        width: 40%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        p {
+            text-align: center;
+            font-weight: bold;
+            color: $negro-claro;
         }
     }
 }

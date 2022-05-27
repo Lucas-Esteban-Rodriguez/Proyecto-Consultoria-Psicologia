@@ -1,9 +1,5 @@
-// ---------------------------------------------Google Fonts--------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
-
 // ---------------------------------------------Variables-----------------------------------------------
+
 $blanco: #ffff;
 $tamaño-fuente: 1rem;
 $gris: #6c757d;
@@ -13,6 +9,7 @@ $azul: #4895ef;
 $verde__whatsapp: #00bb2d;
 $verde-wake: #0B653Fff;
 $bordo: #941b0c;
+
 // Animaciones
 
 @keyframes logo {
@@ -60,7 +57,7 @@ $bordo: #941b0c;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Cardo', serif;
+    font-family: 'Marcellus', serif;
 }
 
 body {

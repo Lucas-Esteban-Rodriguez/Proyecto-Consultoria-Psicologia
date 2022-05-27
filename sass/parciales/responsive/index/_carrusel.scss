@@ -2,13 +2,23 @@
     .img-carrusel {
         height: 450px;
     }
+    .img-banner1, .img-banner3 {
+        width: 100%;
+    }
+    .p-banner2 {
+        p {
+            font-size: .875rem;
+        }
+    }
+    .p2-banner2 {
+        p {
+            font-size: .875rem;
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
     .img-carrusel {
         height: 250px;
-    }
-    .img-carrusel1 {
-        width: 100%;
     }
 }

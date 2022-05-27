@@ -3,10 +3,16 @@
     height: 550px;
 }
 .p-banner2 {
-    width: 20%;
-    left: 10%;
+    width: 25%;
+    left: 0;
+    p {
+        font-size: 1.5rem;
+    }
 }
 .p2-banner2 {
-    width: 20%;
-    right: 10%;
+    width: 25%;
+    left: 70%;
+    p {
+        font-size: 1.5rem;
+    }
 }
