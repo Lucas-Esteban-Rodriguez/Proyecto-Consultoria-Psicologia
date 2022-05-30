@@ -10,15 +10,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Nosotras | WakeMind</title>
+        <link rel="icon" href="img/IconWakeMind.png">
         <!-- -----------------------------------------------Estilos---------------------------------------------- -->
         <link rel="stylesheet" href="/Sass/estilos.css">
     </head>
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
-  <nav class="navbar navbar-light navbar-expand-lg navbar-expand-md pb-md-0 pb-3 pt-lg-0 pt-3">
+  <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-between">
-      <a class="contenedor-logo">
+      <a class="contenedor-logo ps-2">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
         <img class="WakeMind pb-md-3" src="/img/nombre.png" alt="WakeMind">
       </a>
@@ -27,29 +28,39 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100 me-auto mb-0 d-flex align-items-center justify-content-end">
-          <li class="nav-item me-md-3 me-0 btnNav1">
+          <li class="nav-item me-lg-3 me-0 btnNav1">
             <a class="nav-link btn-nav" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item me-md-3 me-0 btnNav2">
+          <li class="nav-item me-lg-3 me-0 btnNav2">
             <a class="nav-link btn-nav__activo" href="nosotras.html">Nosotras</a>
           </li>
-          <li class="nav-item me-md-3 me-0 btnNav3">
+          <li class="nav-item me-lg-3 me-0 btnNav3">
             <a class="nav-link btn-nav" href="/contacto.html">Contacto</a>
           </li>
-          <li class="nav-item dropdown me-md-3 me-0 btnNav5">
+          <li class="nav-item dropdown me-lg-3 me-0 btnNav4">
             <a class="nav-link dropdown-toggle btn-nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               ¿Que acompañamos?
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><p class="dropdown-item">Duelo</p></li>
+              <li><p class="dropdown-item">Exilio</p></li>
+              <li><p class="dropdown-item">Estrés</p></li>
+              <li><p class="dropdown-item">Crisis</p></li>
               <li><p class="dropdown-item">Creencias y conductas limitantes</p></li>
+              <li><p class="dropdown-item">Orientación vocacional y profesional</p></li>
               <li><p class="dropdown-item">Cambios</p></li>
               <li><p class="dropdown-item">Autoestima</p></li>
               <li><p class="dropdown-item">Desarrollo personal</p></li>
               <li><p class="dropdown-item">Acompañamiento a padres</p></li>
               <li><p class="dropdown-item">Gestión de emociones</p></li>
+              <li><p class="dropdown-item">Tristeza</p></li>
+              <li><p class="dropdown-item">Miedo</p></li>
+              <li><p class="dropdown-item">Frustración</p></li>
+              <li><p class="dropdown-item">Enojo</p></li>
+              <li><p class="dropdown-item">Ansiedad</p></li>
             </ul>
           </li>
-          <li class="nav-item dropdown me-md-3 me-0 btnNav6">
+          <li class="nav-item dropdown me-lg-3 me-0 btnNav5">
             <a class="nav-link dropdown-toggle btn-nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Talleres
             </a>
@@ -59,7 +70,7 @@
               <li><p class="dropdown-item">Individual y grupal</p></li>
             </ul>
           </li>
-          <li class="nav-item dropdown me-md-5 me-0 btnNav7">
+          <li class="nav-item dropdown me-lg-5 me-0 btnNav6">
             <a class="nav-link dropdown-toggle btn-nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               ¿Tenes dudas?
             </a>
@@ -76,7 +87,7 @@
     </div>
   </nav>
     <!--------------------------------------------- Main --------------------------------------------->
-  <main class="container-fluid main__nosotras">
+  <main class="container-fluid main__nosotras zIndex-1">
 
     <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-right" data-aos-duration="1000">
       <div class="contenedor-imagen paola-sottili ms-md-3"></div>
@@ -84,54 +95,33 @@
         <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Consultora Psicológica)</span></p>
         <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
       </div>
-      <div class="contenedor__redes">
-        <div class="contenedor-redes__nosotras">
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-        </div>
-        <div class="email-whatsapp">
-          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-          <a class="enviar__email btn me-2" href=""><div></div></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-left" data-aos-duration="1000">
-      <div class="contenedor-imagen sol-monti ms-md-3"></div>
-      <div class="perfil">
-        <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Consultora Psicológica)</span></p>
-        <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
-      </div>
-      <div class="contenedor__redes">
-        <div class="contenedor-redes__nosotras">
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-        </div>
-        <div class="email-whatsapp">
-          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-          <a class="enviar__email btn me-2" href=""><div></div></a>
-        </div>
+      <div class="email-whatsapp d-flex justify-content-end flex-column h-100">
+        <a class="enviar__whatsapp btn mb-md-3 me-md-3" href="https://api.whatsapp.com/send?phone=541121857581&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
+        <a class="enviar__email btn mb-md-3 me-md-3" href="mailto:Wakemindok@gmail.com" target="_blank"><div></div></a>
       </div>
     </div>
 
     <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-right" data-aos-duration="1000">
-      <div class="contenedor-imagen barbara-moreno ms-md-3"></div>
+      <div class="contenedor-imagen sol-monti ms-md-3"></div>
       <div class="perfil">
-        <p class="h1 nombre d-block"><b>Paola Sottili</b> <span class="d-block h3">(Consultora Psicológica)</span></p>
+        <p class="h1 nombre d-block"><b>Sol Monti</b> <span class="d-block h3">(Consultora Psicológica)</span></p>
         <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
       </div>
-      <div class="contenedor__redes">
-        <div class="contenedor-redes__nosotras">
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-          <a class="btn redes__nosotras mt-3 me-4" href=""></a>
-        </div>
-        <div class="email-whatsapp">
-          <a class="enviar__whatsapp btn me-2 mb-lg-3" href=""><div></div></a>
-          <a class="enviar__email btn me-2" href=""><div></div></a>
-        </div>
+      <div class="email-whatsapp d-flex justify-content-end flex-column h-100">
+        <a class="enviar__whatsapp btn mb-md-3 me-md-3" href="https://api.whatsapp.com/send?phone=541121857581&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
+        <a class="enviar__email btn mb-md-3 me-md-3" href="mailto:Wakemindok@gmail.com" target="_blank"><div></div></a>
+      </div>
+    </div>
+
+    <div class="card__nosotras card mt-5" id="cardNosotras" data-aos="flip-left" data-aos-duration="1000">
+      <div class="contenedor-imagen barbara-moreno ms-md-3"></div>
+      <div class="perfil">
+        <p class="h1 nombre d-block"><b>Barbara Moreno</b> <span class="d-block h3">(Consultora Psicológica)</span></p>
+        <p class="informacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum rem impedit accusantium? Tenetur pariatur magni animi voluptatum, et vel eius laudantium laboriosam assumenda nulla dolores, architecto, unde in voluptates autem.</p>
+      </div>
+      <div class="email-whatsapp d-flex justify-content-end flex-column h-100">
+        <a class="enviar__whatsapp btn mb-md-3 me-md-3" href="https://api.whatsapp.com/send?phone=541121857581&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
+        <a class="enviar__email btn mb-md-3 me-md-3" href="mailto:Wakemindok@gmail.com" target="_blank"><div></div></a>
       </div>
     </div>
 
@@ -149,7 +139,6 @@
         <li class="nav-item"><a href="index.html" class="nav-link px-2 btn-footer">Inicio</a></li>
         <li class="nav-item"><a href="nosotras.html" class="nav-link px-2 btn-footer__activo">Nosotras</a></li>
         <li class="nav-item"><a href="contacto.html" class="nav-link px-2 btn-footer">Contacto</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 btn-footer">Información</a></li>
       </ul>
     </footer>
   </div>

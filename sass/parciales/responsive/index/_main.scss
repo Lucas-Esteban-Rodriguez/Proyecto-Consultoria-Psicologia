@@ -9,15 +9,18 @@
 
 @media screen and (max-width: 425px) {
     .main-index {
+        .h2 {
+            font-size: .7rem;
+        }
         .lead {
-            font-size: .875rem;
+            font-size: .5rem;
         }
         .bg-wakemind {
             background-size: 100%;
         }
         .info-index-valor {
             width: 100%;
-            margin-top: 50px;
+            margin-top: 100px;
         }
     }
 }

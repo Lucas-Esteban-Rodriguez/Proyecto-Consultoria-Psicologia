@@ -93,15 +93,16 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #F7F7F7ff;
 }
 .sol-monti {
     background-image: url(/img/Chicas/SolMonti.jpeg);
-    background-position: bottom;
+    background-position: center;
+    background-size: cover;
 }
 .barbara-moreno {
     background-image: url(/img/Chicas/BarbaraMoreno.jpeg);
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
 }
 .bg-verdeWake {
     background-color: $verde-wake;
@@ -122,9 +123,9 @@ body {
     z-index: -1;
 }
 .email-whatsapp {
-    margin-bottom: 24px;
     .enviar__whatsapp {
         @include flexbox-center;
+        width: 130px;
         height: 50px;
         background-color: $verde__whatsapp;
         color: $blanco;
