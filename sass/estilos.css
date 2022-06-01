@@ -142,10 +142,6 @@ body {
   left: 0;
 }
 
-.zIndex-1 {
-  z-index: -1;
-}
-
 .email-whatsapp .enviar__whatsapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +227,7 @@ body {
 }
 
 nav {
+  z-index: 1020;
   opacity: 95%;
   padding: 0 !important;
 }
@@ -333,19 +330,11 @@ nav .btn-nav__activo::before {
 .btnNav5 {
   -webkit-animation: btnNav1 forwards 3s;
           animation: btnNav1 forwards 3s;
-  z-index: 2;
 }
 
 .btnNav6 {
   -webkit-animation: btnNav1 forwards 3.5s;
           animation: btnNav1 forwards 3.5s;
-  z-index: 2;
-}
-
-.btnNav7 {
-  -webkit-animation: btnNav1 forwards 4s;
-          animation: btnNav1 forwards 4s;
-  z-index: 2;
 }
 
 .btn-footer, .btn-footer__activo {
@@ -426,20 +415,18 @@ nav .btn-nav__activo::before {
   border-top: 2px solid #0B653Fff;
   text-align: center;
   position: relative;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 650px;
 }
 
 .main-index .bg-wakemind {
   width: 100%;
-  height: 100%;
+  height: 550px;
   position: absolute;
   background-image: url(/img/WakeMind.png);
-  background-size: 50%;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   opacity: 60%;
+  left: 0;
 }
 
 .main-index .contenedor-info-index {
@@ -449,7 +436,6 @@ nav .btn-nav__activo::before {
 
 .main-index .info-index-valor {
   width: 50%;
-  margin-top: 200px;
 }
 
 .section-info {
@@ -953,36 +939,41 @@ nav .btn-nav__activo::before {
 
 @media screen and (max-width: 425px) {
   .img-carrusel {
-    height: 250px;
+    height: 200px;
   }
   .p-banner2 p {
-    font-size: .875rem;
+    font-size: .7rem;
   }
   .p2-banner2 p {
-    font-size: .875rem;
+    font-size: .7rem;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .main-index {
+    height: 550px;
+  }
   .main-index .bg-wakemind {
-    background-position: center;
-    background-size: 65%;
+    height: 450px;
+  }
+  .main-index .info-index-valor {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+  .main-index {
+    height: 275px;
+  }
+  .main-index .bg-wakemind {
+    height: 250px;
+    background-size: contain;
+  }
   .main-index .h2 {
     font-size: .7rem;
   }
   .main-index .lead {
     font-size: .5rem;
-  }
-  .main-index .bg-wakemind {
-    background-size: 100%;
-  }
-  .main-index .info-index-valor {
-    width: 100%;
-    margin-top: 100px;
   }
 }
 

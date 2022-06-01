@@ -9,6 +9,7 @@
 // Navbar
 
 nav {
+    z-index: 1020;
     opacity: 95%;
     padding: 0!important;
     .contenedor-logo {
@@ -81,13 +82,7 @@ nav {
 }
 .btnNav5 {
     animation: btnNav1 forwards 3s;
-    z-index: 2;
 }
 .btnNav6 {
     animation: btnNav1 forwards 3.5s;
-    z-index: 2;
-}
-.btnNav7 {
-    animation: btnNav1 forwards 4s;
-    z-index: 2;
 }
