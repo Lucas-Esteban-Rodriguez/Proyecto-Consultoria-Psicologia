@@ -19,7 +19,7 @@
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
   <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-between">
-      <a class="contenedor-logo ps-2">
+      <a class="contenedor-logo ps-2" href="index.html">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
         <img class="WakeMind pb-md-3" src="/img/nombre.png" alt="WakeMind">
       </a>
@@ -138,7 +138,7 @@
   </section>
   <!---------------------------------------------- main ---------------------------------------->
   
-  <main class="container-fluid main-index">
+  <main class="container-fluid main-index my-5">
     <div class="bg-wakemind"></div>
     <div class="row contenedor-info-index m-0">
       <div class="d-flex flex-column col-6 px-lg-5 p-0 mt-3 pb-md-5 pb-0" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
@@ -163,53 +163,59 @@
     </div>
     <div class="container-fluid d-flex flex-lg-row flex-column align-items-center justify-content-evenly px-0">
 
-      <div class="card-index paola-sottili mb-lg-0 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-        <div class="card-info">
-          <p class="title">Paola Sottili</p>
-          <p class="subtitle">Consultora Psicológica</p>
+        <div class="card-index paola-sottili" id="cardPaola" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="card-info pe-all opacity-100" id="cardInfoPaola">
+            <p class="title">Paola Sottili</p>
+            <p class="subtitle">Consultora Psicológica</p>
+            <input type="button" class="btn-vermas" id="btnVermasPaola" value="Ver más">
+            <input type="button" class="btn-contratar" id="btnContratarPaola" value="Contratar">
+          </div>
+          <div class="card-info__hover pe-none opacity-0" id="cardInfoHoverPaola">
+            <ul>
+              <li class="especialidad" id="espPaola1">Corriente  Psicológica Humanista (ECP)</li>
+              <li class="especialidad" id="espPaola2">Dip. Orientación Vocacional (Cognitivo-Conductual)</li>
+              <li class="especialidad" id="espPaola3">Dip. Trastornos de la Alimentación</li>
+              <li class="especialidad" id="espPaola4">Esp. Comunicación no violenta</li>
+              <li class="especialidad" id="espPaola5">Educación Emocional- Psicología Positiva</li>
+            </ul>
+            <input type="button" class="mb-5 btn-volver" value="Volver" id="btnVolverPaola">
+          </div>
         </div>
-        <div class="card-info__hover">
-          <ul>
-            <li class="especialidad esp-1">Corriente  Psicológica Humanista (ECP)</li>
-            <li class="especialidad esp-2">Dip. Orientación Vocacional (Cognitivo-Conductual)</li>
-            <li class="especialidad esp-3">Dip. Trastornos de la Alimentación</li>
-            <li class="especialidad esp-4">Esp. Comunicación no violenta</li>
-            <li class="especialidad esp-5">Educación Emocional- Psicología Positiva</li>
-          </ul>
-            <a href="contacto.html#cardContacto" class="btn-contratar">Contratar</a>
-        </div>
-      </div>
 
-      <div class="card-index sol-monti mb-lg-0 mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-        <div class="card-info">
-          <p class="title">Sol Monti</p>
-          <p class="subtitle">Consultora Psicológica</p>
+        <div class="card-index sol-monti" id="cardSol" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+          <div class="card-info pe-all opacity-100" id="cardInfoSol">
+            <p class="title">Sol Monti</p>
+            <p class="subtitle">Consultora Psicológica</p>
+            <input type="button" class="btn-vermas" id="btnVermasSol" value="Ver más">
+            <input type="button" class="btn-contratar" id="btnContratarSol" value="Contratar">
+          </div>
+          <div class="card-info__hover pe-none opacity-0" id="cardInfoHoverSol">
+            <ul>
+              <li class="especialidad" id="espSol1">Esp.  Diversidad sexual.</li>
+              <li class="especialidad" id="espSol2">Dip. Orientación vocacional(Cognitivo-Conductual)</li>
+              <li class="especialidad" id="espSol3">Esp. Counseling laboral y comercial</li>
+            </ul>
+            <input type="button" class="mb-5 btn-volver" value="Volver" id="btnVolverSol">
+          </div>
         </div>
-        <div class="card-info__hover">
-          <ul>
-            <li class="especialidad esp-1">Esp.  Diversidad sexual.</li>
-            <li class="especialidad esp-2">Dip. Orientación vocacional(Cognitivo-Conductual)</li>
-            <li class="especialidad esp-3">Esp. Counseling laboral y comercial</li>
-          </ul>
-          <a href="contacto.html#cardContacto" class="btn-contratar">Contratar</a>
-        </div>
-      </div>
 
-      <div class="card-index barbara-moreno mb-lg-0 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-        <div class="card-info">
-          <p class="title">Barbara Moreno</p>
-          <p class="subtitle">Consultora Psicológica</p>
+        <div class="card-index barbara-moreno" id="cardBarbara" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="card-info pe-all opacity-100" id="cardInfoBarbara">
+            <p class="title">Barbara Moreno</p>
+            <p class="subtitle">Consultora Psicológica</p>
+            <input type="button" class="btn-vermas" id="btnVermasBarbara" value="Ver más">
+            <input type="button" class="btn-contratar" id="btnContratarBarbara" value="Contratar">
+          </div>
+          <div class="card-info__hover pe-none opacity-0" id="cardInfoHoverBarbara">
+            <ul>
+              <li class="especialidad" id="espBarbara1">Psicóloga Social</li>
+              <li class="especialidad" id="espBarbara2">Terapeuta Gestalt</li>
+              <li class="especialidad" id="espBarbara3">Esp. Prevención de adicciones.</li>
+              <li class="especialidad" id="espBarbara4">Coach Ontológico</li>
+            </ul>
+            <input type="button" class="mb-5 btn-volver" value="Volver" id="btnVolverBarbara">
+          </div>
         </div>
-        <div class="card-info__hover">
-          <ul>
-            <li class="especialidad esp-1">Psicóloga Social</li>
-            <li class="especialidad esp-2">Terapeuta Gestalt</li>
-            <li class="especialidad esp-3">Esp. Prevención de adicciones.</li>
-            <li class="especialidad esp-4">Coach Ontológico</li>
-          </ul>
-          <a href="contacto.html#cardContacto" class="btn-contratar">Contratar</a>
-        </div>
-      </div>
 
     </div>
   </section>
@@ -236,5 +242,9 @@
   <script>
     AOS.init()
   </script>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>

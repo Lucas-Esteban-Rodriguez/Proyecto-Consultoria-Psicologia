@@ -24,13 +24,6 @@ $bordo: #941b0c;
     }
 }
 
-@keyframes contratar {
-    to {
-        background-color: $azul;
-        color: $blanco;
-    }
-}
-
 // ---------------------------------------------Mixin´s-------------------------------------------------
 @mixin flexbox-center {
     display: flex;
@@ -63,6 +56,7 @@ $bordo: #941b0c;
 body {
     overflow-x: hidden
 }
+
 .contenedor-titulo__1 {
     @include flexbox-center;
     height: 100px;
@@ -120,20 +114,27 @@ body {
     left: 0;
 }
 .email-whatsapp {
+    .enviar__instagram {
+        @include flexbox-center;
+        width: 100px;
+        height: 50px;
+        background-color: $negro-claro;
+        color: $blanco;
+        div {
+            width: 50%;
+            height: 100%;
+            background-image: url(/img/instagram.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
     .enviar__whatsapp {
         @include flexbox-center;
-        width: 130px;
+        width: 100px;
         height: 50px;
-        background-color: $verde__whatsapp;
+        background-color: $negro-claro;
         color: $blanco;
-        &::before {
-            margin-left: 20px;
-            content: 'Enviar';
-        }
-        &:hover::before {
-            content: '';
-            margin-left: 0;
-        }
         div {
             width: 50%;
             height: 100%;
@@ -145,18 +146,10 @@ body {
     }
     .enviar__email {
         @include flexbox-center;
-        width: 130px;
+        width: 100px;
         height: 50px;
-        background-color: $bordo;
+        background-color: $negro-claro;
         color: $blanco;
-        &::before {
-            margin-left: 20px;
-            content: 'Enviar';
-        }
-        &:hover::before {
-            content: '';
-            margin-left: 0;
-        }
         div {
             width: 50%;
             height: 100%;

@@ -17,7 +17,7 @@
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
   <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-between">
-      <a class="contenedor-logo ps-2">
+      <a class="contenedor-logo ps-2" href="index.html">
         <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
         <img class="WakeMind pb-md-3" src="/img/nombre.png" alt="WakeMind">
       </a>
@@ -59,13 +59,14 @@
             </ul>
           </li>
           <li class="nav-item dropdown me-lg-3 me-0 btnNav5">
-            <a class="nav-link dropdown-toggle btn-nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle btn-nav" href="#" id="dropdownCenterBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Talleres
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><p class="dropdown-item">Inserción laboral</p></li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><p class="dropdown-item mb-0 fw-bold">Talleres para una exitosa <span class="d-block">inserción laboral</span></p></li>
+              <li><hr class="dropdown-divider"></li>
               <li><p class="dropdown-item">Orientación vocacional</p></li>
-              <li><p class="dropdown-item">Individual y grupal</p></li>
+              <li><p class="dropdown-item mb-0">Individual y grupal</p></li>
             </ul>
           </li>
           <li class="nav-item dropdown me-lg-5 me-0 btnNav6">
@@ -76,6 +77,7 @@
               <li><p class="dropdown-item">Sesiones de 50min</p></li>
               <li><p class="dropdown-item">Frecuencia semanal</p></li>
               <li><p class="dropdown-item">Presencial en Pilar</p></li>
+              <li><p class="dropdown-item">Online</p></li>
               <li><p class="dropdown-item">Honorarios accesibles</p></li>
               <li><p class="dropdown-item">Particular</p></li>
             </ul>
@@ -93,12 +95,13 @@
           <img src="/img/Logo-WakeMind.png" alt="Logo" width="150px">
           <p class="h1">Informacion de contacto</p>
           <p>Wakemindok@gmail.com <img src="/img/gmail.png" width="32px"></p>
-          <p>(+54)11 1123880997 <img src="/img/whatsapp.png" width="32px"></p>
+          <p>(+54) 1123880997 <img src="/img/whatsapp.png" width="32px"></p>
           <div class="email-whatsapp d-flex w-100 justify-content-center">
-            <a class="enviar__whatsapp btn col-3" href="https://api.whatsapp.com/send?phone=541121857581&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
+            <a class="enviar__whatsapp btn col-3" href="https://api.whatsapp.com/send?phone=54111123880997&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
             <a class="enviar__email btn ms-2 col-3" href="mailto:Wakemindok@gmail.com" target="_blank"><div></div></a>
+            <a class="enviar__instagram btn ms-2 col-3" href="https://www.instagram.com/wakemind.ok/" target="_blank"><div></div></a>
           </div>
-          <p>Pilar Point piso n°2 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <p class="my-auto">Pilar Point piso n°2 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
           </svg></p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3289.897161823035!2d-58.9133004!3d-34.4547583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cd0d8850079%3A0x15f05e7db1f2251c!2sRM!5e0!3m2!1ses-419!2sar!4v1653264828179!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -128,9 +131,9 @@
               Profesional: *
               <select name="Elegir" id="Hacia" required>
                 <option value="">Seleccionar</option>
-                <option>Paola</option>
-                <option>Bárbara Moreno</option>
-                <option>Sol Monti</option>
+                <option id="optionPaola">Paola Sottili</option>
+                <option id="optionBarbara">Bárbara Moreno</option>
+                <option id="optionSol">Sol Monti</option>
                 <option>No sé</option>
               </select>
             </label>
@@ -164,10 +167,11 @@
           <img src="/img/Logo-WakeMind.png" alt="Logo" width="150px">
           <p class="h1">Informacion de contacto</p>
           <p>Wakemindok@gmail.com <img src="/img/gmail.png" width="32px"></p>
-          <p>(+54)11 1123880997 <img src="/img/whatsapp.png" width="32px"></p>
+          <p>(+54) 1123880997 <img src="/img/whatsapp.png" width="32px"></p>
           <div class="email-whatsapp d-flex w-100 justify-content-center">
-            <a class="enviar__whatsapp btn col-3" href="https://api.whatsapp.com/send?phone=541121857581&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
+            <a class="enviar__whatsapp btn col-3" href="https://api.whatsapp.com/send?phone=541123880997&text=Me%20gustaría%20saber%20el%20precio%20del%20sitio%20web" target="_blank" rel="noopener"><div></div></a>
             <a class="enviar__email btn ms-2 col-3" href="mailto:Wakemindok@gmail.com" target="_blank"><div></div></a>
+            <a class="enviar__instagram btn ms-2 col-3" href="https://www.instagram.com/wakemind.ok/" target="_blank"><div></div></a>
           </div>
           <p>Pilar Point piso n°2 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -208,7 +212,7 @@
 <!-- -----------------------------------------------------Footer------------------------------------------ -->
   <div class="container-fluid">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-4 mb-0 text-muted">© 2021 Company, Inc</p>
+      <p class="col-4 mb-0 text-muted">© 2022 WakeMind, Inc</p>
     
       <a href="index.html" class="col-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
         <img class="bi me-2 logo-footer" src="/img/Logo-WakeMind.png" width="138.5px" height="108.5px" alt="Logo-WakeMind">
@@ -223,13 +227,15 @@
   </div>
 <!-- ----------------------------------------------------Bootstrap----------------------------------------- -->
   <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/contacto.js"></script>
   <!---------------------------------------------------- EMAIL.js--------------------------------- -->
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('bwb8sKpgHncOZ1URx')
+  </script>
 
-<script type="text/javascript">
-  emailjs.init('bwb8sKpgHncOZ1URx')
-</script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="/contacto.js"></script>
 </body>
 </html>

@@ -1,3 +1,25 @@
+
+
+.rotar-carta{
+    transform: rotateY(180deg)!important;
+}
+
+.esp-1 {
+    animation: especialidad 1s .8s forwards;
+}
+.esp-2 {
+    animation: especialidad 1s 1.2s forwards;
+}
+.esp-3 {
+    animation: especialidad 1s 1.6s forwards;
+}
+.esp-4 {
+    animation: especialidad 1s 2s forwards;
+}
+.esp-5 {
+    animation: especialidad 1s 2.4s forwards;
+}
+
 .section-info {
     height: max-content;
     .card-index {
@@ -6,24 +28,16 @@
         position: relative;
         outline: .3em solid $verde-wake;
         border-radius: 5px;
-        z-index: 1;
-        cursor: pointer;
-        &:hover {
-            transform: rotateY(180deg);
-        }
-        &:hover .card-info {
-            opacity: 0;
-        }
+        transition: 1s;
         .card-info__hover {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            opacity: 0;
             transform: rotateY(180deg);
             background-color: $gris-claro;
             position: absolute;
-            transition: .8s;
+            transition: 1s .5s;
             width: 100%;
             height: 100%;
             border-radius: 5px;
@@ -32,67 +46,36 @@
                 .especialidad {
                     font-weight: bold;
                     padding: 5px 0;
-                    list-style-type:square;
+                    list-style-type: square;
                     opacity: 0;
                 }
             }
-            .btn-contratar {
-                border-radius: 5px;
-                text-decoration: none;
-                color: $azul;
-                margin-bottom: 10px;
-                transform: 1s;
-                font-weight: bold;
-                transform: scale(130%);
-                padding: 5px;
-            }
-        }
-        &:hover .card-info__hover {
-            opacity: 100%;
-        }
-        &:hover .esp-1 {
-            animation: especialidad 1s .8s forwards;
-        }
-        &:hover .esp-2 {
-            animation: especialidad 1s 1.2s forwards;
-        }
-        &:hover .esp-3 {
-            animation: especialidad 1s 1.6s forwards;
-        }
-        &:hover .esp-4 {
-            animation: especialidad 1s 2s forwards;
-        }
-        &:hover .esp-5 {
-            animation: especialidad 1s 2.4s forwards;
-        }
-        &:hover .btn-contratar {
-            animation: contratar 1.5s .8s alternate linear infinite;
         }
     }
-    .card-info {
-     bottom: 0;
-     position: absolute;
-     width: 100%;
-     padding: 1.5em;
-     text-align: center;
-     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860), opacity .8s;
-        .title {
-         font-size: 1.3em;
-         font-weight: bold;
-         color: $blanco;
-         &::after {
-             content: "";
-             display: block;
-             width: 50%;
-             height: 2px;
-             margin: 0 auto 4%;
-             background-color: $blanco;
-            }
+}
+.card-info {
+ bottom: 0;
+ position: absolute;
+ width: 100%;
+ padding: 1.5em;
+ text-align: center;
+ transition: transform 1s, opacity .8s;
+    .title {
+     font-size: 1.3em;
+     font-weight: bold;
+     color: $blanco;
+     &::after {
+         content: "";
+         display: block;
+         width: 50%;
+         height: 2px;
+         margin: 0 auto 4%;
+         background-color: $blanco;
         }
-        .subtitle {
-         font-weight: 400;
-         line-height: 1em;
-         color: $blanco;
-        }
+    }
+    .subtitle {
+     font-weight: 400;
+     line-height: 1em;
+     color: $blanco;
     }
 }

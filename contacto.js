@@ -1,3 +1,34 @@
+// Traer datos del localStorage
+
+if (localStorage) {
+
+    switch (localStorage.getItem(1)) {
+        case 'Paola':
+            
+            $('#Hacia').html(
+            '<option value="">Seleccionar</option> <option Selected>Paola Sottili</option> <option>Sol Monti</option> <option>Barbara Moreno</option> <option>No sé</option>')
+            localStorage.clear()
+            break;
+
+        case 'Sol':
+
+            $('#Hacia').html(
+                '<option value="">Seleccionar</option> <option>Paola Sottili</option> <option Selected>Sol Monti</option> <option>Barbara Moreno</option> <option>No sé</option>')
+                localStorage.clear()
+            break;
+
+        case 'Barbara':
+
+            $('#Hacia').html(
+                '<option value="">Seleccionar</option> <option>Paola Sottili</option> <option>Sol Monti</option> <option Selected>Barbara Moreno</option> <option>No sé</option>')
+                localStorage.clear()
+            break;
+
+        default:
+            break;
+    }
+}
+
 // Contacto
 
 const inputRadio = document.getElementById('inputRadio')

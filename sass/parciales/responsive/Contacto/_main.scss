@@ -3,11 +3,14 @@
         padding: 0;
         .card__contacto {
             width: 100%;
+            .formulario__contacto {
+                padding: 10px 20px;
+            }
         }
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:426px) {
     .main__contacto {
         height: max-content;
         .card__contacto {
@@ -34,6 +37,7 @@
         .card-contacto__turno { 
             width: 100%;
             left: 0;
+            flex-direction: column;
         }
     }   
 }
