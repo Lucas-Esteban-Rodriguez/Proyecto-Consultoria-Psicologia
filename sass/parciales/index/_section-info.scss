@@ -29,6 +29,37 @@
         outline: .3em solid $verde-wake;
         border-radius: 5px;
         transition: 1s;
+        .title {
+            font-size: $tamaño-fuente*1.7;
+        }
+        .subtitle {
+            position: relative;
+            z-index: 1;
+            padding: 2px 0;
+            &:before {
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                content: '';
+                position: absolute;
+                background-color: $verde-wake;
+                opacity: 70%;
+                z-index: -1;
+            }
+        }
+        input {
+            background-color: $verde-wake;
+            padding: 4px;
+            border-radius: 7px;
+            color: $blanco;
+            font-weight: bold;
+            border: none;
+            transition: .3s;
+            &:hover {
+                background-color: $verde__whatsapp;
+            }
+        }
         .card-info__hover {
             display: flex;
             justify-content: center;

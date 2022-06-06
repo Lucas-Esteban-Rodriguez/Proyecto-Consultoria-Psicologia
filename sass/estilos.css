@@ -91,10 +91,10 @@ body {
 }
 
 .paola-sottili {
-  background-image: url(/img/Chicas/PaolaSottili1.png);
-  background-size: contain;
-  background-position: center;
+  background-image: url(/img/Chicas/PaolaSottili2.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #F7F7F7ff;
 }
 
@@ -475,6 +475,43 @@ nav .btn-nav__activo::before {
   transition: 1s;
 }
 
+.section-info .card-index .title {
+  font-size: 1.7rem;
+}
+
+.section-info .card-index .subtitle {
+  position: relative;
+  z-index: 1;
+  padding: 2px 0;
+}
+
+.section-info .card-index .subtitle:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  position: absolute;
+  background-color: #0B653Fff;
+  opacity: 70%;
+  z-index: -1;
+}
+
+.section-info .card-index input {
+  background-color: #0B653Fff;
+  padding: 4px;
+  border-radius: 7px;
+  color: #ffff;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.section-info .card-index input:hover {
+  background-color: #00bb2d;
+}
+
 .section-info .card-index .card-info__hover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,13 +871,13 @@ nav .btn-nav__activo::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 30px;
+    height: 35px;
     background-color: #0B653Fff;
     color: #ffff;
   }
   .contenedor-titulo__2 h2 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
