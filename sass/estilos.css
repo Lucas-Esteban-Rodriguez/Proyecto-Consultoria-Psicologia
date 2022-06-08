@@ -418,6 +418,18 @@ nav .btn-nav__activo::before {
   background-repeat: no-repeat;
   opacity: 60%;
   left: 0;
+  display: none;
+}
+
+.main-index .bg-wakemind__responsive {
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  background-image: url(/img/Logo-WakeMind.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 60%;
+  left: 0;
 }
 
 .main-index .contenedor-info-index {
@@ -964,11 +976,21 @@ nav .btn-nav__activo::before {
 
 @media screen and (max-width: 426px) {
   .main-index {
-    height: 275px;
+    height: 250px;
   }
   .main-index .bg-wakemind {
     height: 250px;
     background-size: contain;
+  }
+  .main-index .bg-wakemind__responsive {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background-image: url(/img/Logo-WakeMind.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 60%;
+    left: 0;
   }
   .main-index .h2 {
     font-size: .7rem;

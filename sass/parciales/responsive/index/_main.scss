@@ -12,10 +12,20 @@
 
 @media screen and (max-width: 426px) {
     .main-index {
-        height: 275px;
+        height: 250px;
         .bg-wakemind {
             height: 250px;
             background-size: contain;
+        }
+        .bg-wakemind__responsive {
+            width: 100%;
+            height: 250px;
+            position: absolute;
+            background-image: url(/img/Logo-WakeMind.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 60%;
+            left: 0;
         }
         .h2 {
             font-size: .7rem;
