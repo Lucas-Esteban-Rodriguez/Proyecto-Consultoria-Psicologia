@@ -17,13 +17,13 @@
 </head>
 <body>
 <!-- ---------------------------------------------------------Navbar--------------------------------------- -->
-  <nav class="navbar navbar-light navbar-expand-lg">
-    <div class="container-fluid d-flex justify-content-between">
-      <a class="contenedor-logo ps-2" href="index.html">
-        <img class="logo mb-md-0 mb-2" src="/img/Logo-WakeMind.png" alt="LOGO">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="contenedor-logo" href="index.html">
+        <img class="logo" src="/img/Logo-WakeMind.png" alt="LOGO">
         <img class="WakeMind pb-md-3" src="/img/nombre.png" alt="WakeMind">
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -88,8 +88,9 @@
       </div>
     </div>
   </nav>
+  
   <!-- ----------------------------------------carrusel----------------------------------------------- -->
-  <section class="container-fluid">
+  <section class="container-fluid pb-3 pt-4 px-0">
     <div id="carouselExampledark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -99,7 +100,6 @@
           <img src="img/banner-index/img-banner2.jpg" class="d-block ms-auto me-auto img-carrusel" alt="...">
           <div class="carousel-caption r-0 l-0 h-100 ms-0 d-flex justify-content-between">
             <div class="p-banner2 position-absolute d-flex flex-column justify-content-center h-100">
-              <p class="mb-0 mb-md-3">Duelo</p>
               <p class="mb-0 mb-md-3">Exilio</p>
               <p class="mb-0 mb-md-3">Crisis</p>
               <p class="mb-0 mb-md-3">Gestion de emociones</p>
@@ -108,6 +108,7 @@
               <p class="mb-0 mb-md-3">Desarrollo personal</p>
             </div>
             <div class="p2-banner2 position-absolute d-flex flex-column justify-content-center h-100">
+              <p class="mb-0 mb-md-3">Duelo</p>
               <p class="mb-0 mb-md-3">Estrés</p>
               <p class="mb-0 mb-md-3">Autoestima</p>
               <p class="mb-0 mb-md-3">Tristeza</p>
@@ -142,11 +143,11 @@
     <div class="bg-wakemind"></div>
     <div class="bg-wakemind__responsive"></div>
     <div class="row contenedor-info-index m-0">
-      <div class="d-flex flex-column col-md-6 col-12 px-lg-5 p-0 mt-md-3 mt-0 pb-md-5 pb-0" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+      <div class="d-flex flex-column col-md-6 col-12 px-lg-5 p-0 mt-md-3 mt-0 pb-md-5 pb-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
         <p class="featurette-heading h2 fw-bold">¿Cómo podemos ayudarte?</p>
         <p class="lead">Nuestra misión es acompañarte en la búsqueda de tu <span class="bg-verdeWake">bienestar y calidad de vida</span> mediante una terapia psicológica, centrándonos en el aquí y ahora, brindándote un espacio de <br> <span class="text-verdeWake">contención, escucha y aceptación.</span></p>
       </div>
-      <div class="d-flex flex-column col-md-6 col-12 px-lg-5 p-0 mt-md-3 mt-0 pb-md-5 pb-0" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+      <div class="d-flex flex-column col-md-6 col-12 px-lg-5 p-0 mt-md-3 mt-0 pb-md-5 pb-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
         <p class="featurette-heading h2 fw-bold">¿Cuál es nuestro objetivo?</p>
         <p class="lead">Nuestro  objetivo es poder <span class="bg-verdeWake">acompañarte</span> a atravesar ese momento difícil, acceder a tu consulta de una manera muy simple y ágil con un solo clic, desde donde estés <br> <span class="text-verdeWake">sin tener que moverte.</span></p>
       </div>
@@ -164,7 +165,7 @@
     </div>
     <div class="container-fluid d-flex flex-lg-row flex-column align-items-center justify-content-evenly px-0">
 
-        <div class="card-index paola-sottili mb-md-0 mb-3" id="cardPaola" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+        <div class="card-index paola-sottili mb-md-0 mb-3" id="cardPaola" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="card-info pe-all opacity-100" id="cardInfoPaola">
             <p class="title">Paola Sottili</p>
             <p class="subtitle">Consultora Psicológica</p>
@@ -183,7 +184,7 @@
           </div>
         </div>
 
-        <div class="card-index sol-monti mb-md-0 mb-3 mt-3 mt-md-0" id="cardSol" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="card-index sol-monti mb-md-0 mb-3 mt-3 mt-md-0" id="cardSol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="card-info pe-all opacity-100" id="cardInfoSol">
             <p class="title">Sol Monti</p>
             <p class="subtitle">Consultora Psicológica</p>
@@ -200,7 +201,7 @@
           </div>
         </div>
 
-        <div class="card-index barbara-moreno mt-md-0 mt-3" id="cardBarbara" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+        <div class="card-index barbara-moreno mt-md-0 mt-3" id="cardBarbara" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div class="card-info pe-all opacity-100" id="cardInfoBarbara">
             <p class="title">Barbara Moreno</p>
             <p class="subtitle">Consultora Psicológica</p>

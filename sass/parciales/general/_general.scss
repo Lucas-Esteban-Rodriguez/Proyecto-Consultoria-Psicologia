@@ -53,10 +53,6 @@ $bordo: #941b0c;
     font-family: 'Marcellus', serif;
 }
 
-body {
-    overflow-x: hidden
-}
-
 .contenedor-titulo__1 {
     @include flexbox-center;
     height: 100px;

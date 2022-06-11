@@ -32,10 +32,6 @@
   font-family: 'Marcellus', serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .contenedor-titulo__1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,8 +215,9 @@ body {
 
 nav {
   z-index: 1020;
-  opacity: 95%;
-  padding: 0 !important;
+  background-color: #ffff;
+  border-bottom: 2px solid #0B653Fff;
+  overflow-x: hidden;
 }
 
 nav .contenedor-logo {
@@ -895,7 +892,7 @@ nav .btn-nav__activo::before {
 
 @media screen and (max-width: 768px) {
   nav .contenedor-logo {
-    width: 200px;
+    width: 170px;
   }
 }
 
@@ -904,16 +901,12 @@ nav .btn-nav__activo::before {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   nav .contenedor-logo .logo {
-    width: 50px;
+    width: 40px;
   }
   nav .contenedor-logo .WakeMind {
-    width: 110px;
+    width: 100px;
   }
 }
 
@@ -952,7 +945,7 @@ nav .btn-nav__activo::before {
 
 @media screen and (max-width: 425px) {
   .img-carrusel {
-    height: 200px;
+    height: 300px;
   }
   .p-banner2 p {
     font-size: .7rem;
