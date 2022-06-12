@@ -207,8 +207,8 @@
 .icon-wakemind {
   background-image: url(/img/IconWakeMind.png);
   background-size: cover;
-  width: 64px;
-  height: 64px;
+  width: 55px;
+  height: 55px;
   display: none;
 }
 
@@ -1019,10 +1019,10 @@ nav .btn-nav__activo::before {
 
 @media screen and (max-width: 426px) {
   .main-index .h2 {
-    font-size: .7rem;
+    font-size: 1rem;
   }
   .main-index .lead {
-    font-size: .5rem;
+    font-size: .8rem;
   }
 }
 
