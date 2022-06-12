@@ -92,7 +92,8 @@ $bordo: #941b0c;
 }
 .barbara-moreno {
     background-image: url(/img/Chicas/BarbaraMoreno.jpeg);
-    background-position: bottom;
+    background-position: center;
+    background-size: cover;
 }
 .bg-verdeWake {
     background-color: $verde-wake;
@@ -105,6 +106,9 @@ $bordo: #941b0c;
 }
 .r-0 {
     right: 0;
+}
+.l-5 {
+    left: 7%;
 }
 .l-0 {
     left: 0;
@@ -155,4 +159,11 @@ $bordo: #941b0c;
             background-repeat: no-repeat;
         }
     }
+}
+.icon-wakemind {
+    background-image: url(/img/IconWakeMind.png);
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+    display: none;
 }

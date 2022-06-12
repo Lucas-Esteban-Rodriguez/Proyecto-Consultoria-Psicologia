@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .contenedor-titulo__2 {
         @include flexbox-center;
         height: 35px;
@@ -8,5 +8,14 @@
             font-weight: bold;
             font-size: 1.7rem;
         }
+    }
+    .enviar__instagram {
+        transform:scale(75%);
+    }
+    .enviar__whatsapp {
+        transform:scale(75%);
+    }
+    .enviar__email {
+        transform:scale(75%);
     }
 }

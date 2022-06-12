@@ -76,24 +76,6 @@
                     margin: 0px;
                 }
             }
-            .contenedor__redes {
-                width: 100%;
-                height: 10%;
-                .contenedor-redes__nosotras {
-                    display: none;
-                }
-                .email-whatsapp {
-                    @include flexbox-center;
-                    flex-direction: row;
-                    width: 100%;
-                    .enviar__whatsapp {
-                        width: 100%;
-                    }
-                    .enviar__email {
-                        width: 100%;
-                    }
-                }
-            }
         }
     }
 }
