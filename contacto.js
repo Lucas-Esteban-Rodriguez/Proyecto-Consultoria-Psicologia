@@ -72,23 +72,44 @@ const btnEnviar = document.getElementById('btnEnviar');
 
 document.getElementById('contact-form')
  .addEventListener('submit', function(event) {
+
    event.preventDefault();
 
-   btnEnviar.value = 'Enviando...';
+   $('body').addClass('body-loader')
+   $('#spinner-incompleto div').addClass('spinner-logo__incompleto')
+    $('#spinner').removeClass('slow-loader')
 
    const serviceID = 'default_service';
    const templateID = 'template_xu1vj6i';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btnEnviar.value = 'Enviar';
-      if (inputRadio.checked) {
-          pasarATurno()
-      } else {
-          alert('Enviado!');
-      }
+            
+        $('#spinner-incompleto div').removeClass('spinner-logo__incompleto').addClass('spinner-logo__completo')
+        $('#spinner-incompleto p').text('Enviado con éxito')
+
+        setTimeout(() => {
+            $('body').removeClass('body-loader')
+            $('#spinner').addClass('slow-loader')
+            $('#spinner-incompleto div').removeClass('spinner-logo__completo').addClass('spinner-logo__incompleto')
+            $('#spinner-incompleto p').text('Enviando')
+        }, 2000);
+
+            if (inputRadio.checked) {
+                pasarATurno()
+            }
+
+
     }, (err) => {
-      btnEnviar.value = 'Enviar';
-      alert(JSON.stringify(err));
+
+        $('#spinner-incompleto div').removeClass('spinner-logo__incompleto').addClass('spinner-logo__rechazado')
+        $('#spinner-incompleto p').text('Ocurrio un error, intente nuevamente por favor.')
+
+        setTimeout(() => {
+            $('body').removeClass('body-loader')
+            $('#spinner').addClass('slow-loader')
+            $('#spinner-incompleto div').removeClass('spinner-logo__rechazado').addClass('spinner-logo__incompleto')
+            $('#spinner-incompleto p').text('Enviando')
+        }, 2000);
     });
 });

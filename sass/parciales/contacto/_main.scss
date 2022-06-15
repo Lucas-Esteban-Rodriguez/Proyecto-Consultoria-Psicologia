@@ -1,4 +1,33 @@
+.body-loader {
+    overflow: hidden;
+}
+.slow-loader {
+    opacity: 0;
+    pointer-events: none;
+}
+.spinner-contacto {
+    background-color: $blanco;
+    z-index: 9999;
+}
+#spinner-incompleto {
+    div {
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .spinner-logo__incompleto {
+        animation: logo 1s linear infinite;
+        background-image: url(/img/IconWakeMind.png);
+    }
+    .spinner-logo__completo {
+        background-image: url(/img/comprobado.png);
+    }
+    .spinner-logo__rechazado {
+        background-image: url(/img/cancelar.png);
+    }
+}
 .main__contacto {
+    z-index: 1;
     width: 100%;
     height: max-content;
     position: relative;
@@ -12,7 +41,7 @@
         z-index: 0;
         .formulario__contacto {
             padding: 20px 40px;
-            background-color: lightgray;
+            background-color: $gris-claro;
             width: 60%;
             height: 100%;
             border-top-right-radius: 20px;
@@ -60,7 +89,7 @@
         width: 80%;
         height: 100%;
         z-index: 1;
-        background-color: lightgray;
+        background-color: $gris-claro;
         box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #bebebe;
         .turnos {
@@ -96,8 +125,9 @@
     }
     .informacion__contacto {
         @include flexbox-center;
+        background-color: $gris-claro;
         flex-direction: column;
-        background-color: $blanco;
+        border-right: 5px solid $verde-wake;
         width: 40%;
         height: 100%;
         border-top-left-radius: 20px;

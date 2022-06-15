@@ -1,8 +1,11 @@
 @media screen and (max-width: 768px) {
     .main-index {
-        height: 550px;
+        height: max-content;
         .bg-wakemind {
-            height: 450px;
+            display: none;
+        }
+        .icon-wakemind {
+            display: block;
         }
         .info-index-valor {
             width: 100%;
@@ -12,16 +15,11 @@
 
 @media screen and (max-width: 426px) {
     .main-index {
-        height: 275px;
-        .bg-wakemind {
-            height: 250px;
-            background-size: contain;
-        }
         .h2 {
-            font-size: .7rem;
+            font-size: 1rem;
         }
         .lead {
-            font-size: .5rem;
+            font-size: .8rem;
         }
     }
 }

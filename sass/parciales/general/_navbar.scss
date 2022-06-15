@@ -10,8 +10,9 @@
 
 nav {
     z-index: 1020;
-    opacity: 95%;
-    padding: 0!important;
+    background-color: $blanco;
+    border-bottom: 2px solid $verde-wake;
+    overflow-x: hidden;
     .contenedor-logo {
         width: 200px;
         display: flex;
