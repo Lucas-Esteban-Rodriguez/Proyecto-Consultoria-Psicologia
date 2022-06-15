@@ -83,17 +83,12 @@
     .card-contacto__turno {
         opacity: 0;
         pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 10%;
-        width: 80%;
-        height: 100%;
         z-index: 1;
         background-color: $gris-claro;
         box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #bebebe;
         .turnos {
-            width: 60%;
+            width: 80%;
             .formulario-turno {
                 @include flexbox-center;
                 flex-direction: column;
@@ -115,7 +110,6 @@
                     }
                     textarea {
                         @extend .input-turno;
-                        width: 300px;
                         height: 30px;
                         resize: none;
                     }
@@ -123,20 +117,20 @@
             }
         }
     }
-    .informacion__contacto {
-        @include flexbox-center;
-        background-color: $gris-claro;
-        flex-direction: column;
-        border-right: 5px solid $verde-wake;
-        width: 40%;
-        height: 100%;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        p {
-            text-align: center;
-            font-weight: bold;
-            color: $negro-claro;
-        }
+}
+.informacion__contacto {
+    @include flexbox-center;
+    background-color: $gris-claro;
+    flex-direction: column;
+    border-right: 5px solid $verde-wake;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    p {
+        text-align: center;
+        font-weight: bold;
+        color: $negro-claro;
     }
 }
 .p-radio {

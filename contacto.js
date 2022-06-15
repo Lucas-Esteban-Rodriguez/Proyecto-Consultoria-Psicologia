@@ -87,6 +87,7 @@ document.getElementById('contact-form')
             
         $('#spinner-incompleto div').removeClass('spinner-logo__incompleto').addClass('spinner-logo__completo')
         $('#spinner-incompleto p').text('Enviado con éxito')
+        document.location.href = '#divTurno'
 
         setTimeout(() => {
             $('body').removeClass('body-loader')
@@ -100,7 +101,7 @@ document.getElementById('contact-form')
             }
 
 
-    }, (err) => {
+    }, () => {
 
         $('#spinner-incompleto div').removeClass('spinner-logo__incompleto').addClass('spinner-logo__rechazado')
         $('#spinner-incompleto p').text('Ocurrio un error, intente nuevamente por favor.')

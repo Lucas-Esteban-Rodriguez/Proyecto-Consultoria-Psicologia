@@ -49,11 +49,15 @@
         }
         .card-contacto__turno { 
             flex-direction: column;
+            .turno {
+                height: 50%;
+            }
             .informacion__contacto {
                 border-right: none;
                 border-bottom: 5px solid $verde-wake;
                 border-radius: 0;
                 width: 100%;
+                height: 50%;
             }
         }
     }   
