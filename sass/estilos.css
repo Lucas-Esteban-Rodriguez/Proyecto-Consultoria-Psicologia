@@ -637,8 +637,10 @@ nav .btn-nav__activo::before {
   width: 100%;
   height: 580px;
   border-radius: 20px;
-  -webkit-box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
-          box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
+  -webkit-box-shadow: 15px 15px 30px #bebebe,
+ -15px -15px 30px #bebebe;
+          box-shadow: 15px 15px 30px #bebebe,
+ -15px -15px 30px #bebebe;
   z-index: 0;
 }
 
@@ -702,8 +704,10 @@ nav .btn-nav__activo::before {
   height: 100%;
   z-index: 1;
   background-color: lightgray;
-  -webkit-box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
-          box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #bebebe;
+  -webkit-box-shadow: 15px 15px 30px #bebebe,
+ -15px -15px 30px #bebebe;
+          box-shadow: 15px 15px 30px #bebebe,
+ -15px -15px 30px #bebebe;
 }
 
 .main__contacto .card-contacto__turno .turnos {
