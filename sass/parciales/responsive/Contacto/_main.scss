@@ -1,6 +1,17 @@
 @media screen and (max-width: 769px) {
     .main__contacto {
         padding: 0;
+        .informacion__contacto {
+            .enviar__email {
+                transform: scale(75%);
+            }
+            .enviar__whatsapp {
+                transform: scale(75%);
+            }
+            .enviar__instagram {
+                transform: scale(75%);
+            }
+        }
         .card__contacto {
             width: 100%;
             .formulario__contacto {
@@ -37,9 +48,13 @@
             }
         }
         .card-contacto__turno { 
-            width: 100%;
-            left: 0;
             flex-direction: column;
+            .informacion__contacto {
+                border-right: none;
+                border-bottom: 5px solid $verde-wake;
+                border-radius: 0;
+                width: 100%;
+            }
         }
     }   
 }

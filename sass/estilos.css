@@ -693,6 +693,10 @@ nav .btn-nav__activo::before {
   background-image: url(/img/comprobado.png);
 }
 
+#spinner-incompleto .spinner-logo__rechazado {
+  background-image: url(/img/cancelar.png);
+}
+
 .main__contacto {
   z-index: 1;
   width: 100%;
@@ -1117,6 +1121,18 @@ nav .btn-nav__activo::before {
   .main__contacto {
     padding: 0;
   }
+  .main__contacto .informacion__contacto .enviar__email {
+    -webkit-transform: scale(75%);
+            transform: scale(75%);
+  }
+  .main__contacto .informacion__contacto .enviar__whatsapp {
+    -webkit-transform: scale(75%);
+            transform: scale(75%);
+  }
+  .main__contacto .informacion__contacto .enviar__instagram {
+    -webkit-transform: scale(75%);
+            transform: scale(75%);
+  }
   .main__contacto .card__contacto {
     width: 100%;
   }
@@ -1154,12 +1170,16 @@ nav .btn-nav__activo::before {
     width: 60%;
   }
   .main__contacto .card-contacto__turno {
-    width: 100%;
-    left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .main__contacto .card-contacto__turno .informacion__contacto {
+    border-right: none;
+    border-bottom: 5px solid #0B653Fff;
+    border-radius: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -91,6 +91,8 @@ document.getElementById('contact-form')
         setTimeout(() => {
             $('body').removeClass('body-loader')
             $('#spinner').addClass('slow-loader')
+            $('#spinner-incompleto div').removeClass('spinner-logo__completo').addClass('spinner-logo__incompleto')
+            $('#spinner-incompleto p').text('Enviando')
         }, 2000);
 
             if (inputRadio.checked) {
@@ -99,6 +101,15 @@ document.getElementById('contact-form')
 
 
     }, (err) => {
-      alert(JSON.stringify(err));
+
+        $('#spinner-incompleto div').removeClass('spinner-logo__incompleto').addClass('spinner-logo__rechazado')
+        $('#spinner-incompleto p').text('Ocurrio un error, intente nuevamente por favor.')
+
+        setTimeout(() => {
+            $('body').removeClass('body-loader')
+            $('#spinner').addClass('slow-loader')
+            $('#spinner-incompleto div').removeClass('spinner-logo__rechazado').addClass('spinner-logo__incompleto')
+            $('#spinner-incompleto p').text('Enviando')
+        }, 2000);
     });
 });
