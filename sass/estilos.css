@@ -216,6 +216,17 @@ body {
   display: none;
 }
 
+.whatsapp-fixed {
+  bottom: 0;
+  right: 0;
+  z-index: 9990;
+  padding: 50px;
+}
+
+.whatsapp-fixed img {
+  width: 90px;
+}
+
 @-webkit-keyframes btnNav1 {
   from {
     -webkit-transform: translateY(-100px);

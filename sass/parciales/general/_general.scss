@@ -170,3 +170,13 @@ body {
     height: 55px;
     display: none;
 }
+
+.whatsapp-fixed {
+    bottom: 0;
+    right: 0;
+    z-index: 9990;
+    padding: 50px;
+    img {
+        width: 90px;
+    }
+}
