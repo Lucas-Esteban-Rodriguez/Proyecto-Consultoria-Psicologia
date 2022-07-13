@@ -915,6 +915,12 @@ nav .btn-nav__activo::before {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .whatsapp-fixed {
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 426px) {
   .contenedor-titulo__2 {
     display: -webkit-box;
