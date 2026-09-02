@@ -248,6 +248,10 @@ nav {
   overflow-x: hidden;
 }
 
+.navbar .dropdown-menu {
+  z-index: 1050;
+}
+
 nav .contenedor-logo {
   width: 200px;
   display: -webkit-box;
