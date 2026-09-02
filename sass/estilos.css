@@ -245,13 +245,7 @@ nav {
   z-index: 1050;
   background-color: #ffff;
   border-bottom: 2px solid #0B653Fff;
-  overflow-x: hidden;
 }
-
-.navbar .dropdown-menu {
-  z-index: 1050;
-}
-
 nav .contenedor-logo {
   width: 200px;
   display: -webkit-box;
